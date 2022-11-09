@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+# adding status files to demo Brookfield presentation
+# /build
 
 # misc
 .DS_Store
