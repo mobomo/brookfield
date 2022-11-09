@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@400&display=swap');
+@import url('https: //use.typekit.net/kox1ddx.css?family=playfair-display');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 body {
   margin: 0;
