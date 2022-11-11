@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "brandblue": "#082c5c",
+        // "brandblue": "#082c5c",
+          "brandblue": "#002A4E",
 
       },
       width: {
@@ -15,6 +16,12 @@ module.exports = {
         "6/7": "85.7142857%",
         '100': '50em',
         '99': '45em',
+        '98': '40em',
+        '97': '35em',
+        '975': '32.5em',
+        '977': '30em',
+        '9775': '27.5em',
+        '9777': '25em',
         '70': '35em',
         '150': '75em',
       },
@@ -35,6 +42,8 @@ module.exports = {
         '2.5xl': '1.65rem',
         '3xl': '1.875rem',
         '4xl': '2.25rem',
+        '4.5xl': '2.65rem',
+        '4.75xl': '2.85rem',
         '5xl': '3rem',
         '6xl': '4rem',
         '7xl': '5rem',

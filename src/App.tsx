@@ -1,104 +1,121 @@
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import {useSpring, animated} from 'react-spring'
-// import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import {
-  FrameTitle, Frame0,Frame00, Frame1, Frame000
-  // Frame1, Frame2, Frame3, Frame4, Frame5, Frame6, Frame7, Frame8
-} from './AnimationFiles'
+import TitleFrame from './frames/TitleFrame'
+import  IntroFrame  from './frames/IntroFrame'
+import  SecondFrame  from './frames/SecondFrame'
+import FirsthFrame from './frames/FirsthFrame'
+import  ThirdFrame  from './frames/ThirdFrame'
+import  FourthFrame  from './frames/FourthFrame'
+import  FifthFrame  from './frames/FifthFrame'
+import  SixthFrame  from './frames/SixthFrame'
+import  SeventhFrame  from './frames/SeventhFrame'
+
 
 const App = () => {
-
-  const stylesFrameTitle = useSpring({
-    from: { y: 20, opacity: 0 },
-    to: { y: 0, opacity: 1 },
-    delay: 50,
-  })
-  const stylesFrame0 = useSpring({
-    from: { y: 50, opacity: 0 },
-    to: { y: 0, opacity: 1 },
-    delay: 100,
-  })
-  const stylesFrame00 = useSpring({
-    from: { y: 70, opacity: 0 },
-    to: { y: 0, opacity: 1 },
-    delay: 150,
-  })
   return (
-
-       
     <Parallax
-      config={{ duration: 10 }}
-      pages={3}
-      style={{ top: '0', left: '0', backgroundColor: '#082c5c', scrollbarColor:'red' }}>
+      // config={{ duration: 10 }}
+      pages={6}
+      style={{ top: '0', left: '0', backgroundColor: '#002A4E' }}>
+      {/* Page 1 */}
            {/* Intro text only */}
       <ParallaxLayer
         offset={0}
-        speed={5}
+        speed={2}
         className='flex flex-col text-center justify-center items-center'
       >
-        <animated.div style={stylesFrameTitle}>
-          <FrameTitle />
-        </animated.div>
+
+        <TitleFrame />
+
       </ParallaxLayer>
-           {/* Enters animation city */}
+      {/* Page 2 */}
+     {/* Evolving to offer the best of both worlds */}
       <ParallaxLayer
         offset={0.1}
-        speed={1}
-        className='flex flex-col text-center justify-center items-center'
+        speed={0.2}
+        className='flex flex-col text-center justify-center items-center '
       >
-        <animated.div className='flex flex-col text-center justify-center items-center' style={stylesFrame0}>
-            <Frame0 />
-        </animated.div>
-        <animated.div className='flex flex-col text-center justify-center items-center' style={stylesFrame00}>
-            <Frame00 />
-        </animated.div>
+
+        <IntroFrame />
+        
       </ParallaxLayer>
-        {/* Two distinct offerings - text and animation */}
+      {/* Page 3 */}
+        {/* Enters animation city */}
       <ParallaxLayer
-            offset={0.77}
-            speed={2.5}
-            className='flex flex-col text-center justify-center items-center'
-          >
-        <Frame1 />
+            offset={0.8}
+        speed={0.7}
+        className='flex justify-center items-center '
+      >
+        
+        <FirsthFrame />
+
       </ParallaxLayer>
+      {/* Page 4 */}
+       {/* Two distinct offerings - text and animation */}
       <ParallaxLayer
-            offset={0.9}
-            speed={1.2}
-            className='flex flex-col text-center justify-center items-center'
-          >
-        <Frame000 />
+            offset={1}
+        speed={0.9}
+        className='flex justify-center items-center '
+      >
+        
+        <SecondFrame />
+        
       </ParallaxLayer>
+      {/* Page 5 */}
         {/* Another way to invest with Brookfield - text and animation */}
-          {/* <ParallaxLayer
-            offset={3}
-            speed={2.5}
-            style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        ><Frame4 /></ParallaxLayer> */}
+      <ParallaxLayer
+            offset={1.8}
+            speed={0.1}
+            className='flex flex-col justify-center items-center '
+      >
+     
+        <ThirdFrame />
+       
+      </ParallaxLayer>
+      {/* Page 6 */}
         {/* Brookfield corporation - animation and text */}
-          {/* <ParallaxLayer
-            offset={4}
-            speed={2.5}
-            style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        ><Frame5 /></ParallaxLayer>   */}
+      <ParallaxLayer
+            offset={2.5}
+            speed={0.1}
+            className='flex flex-col text-center justify-center items-center bg-blue-300'
+      >
+
+        <FourthFrame />
+        
+      </ParallaxLayer>  
+      {/* Page 7 */}
         {/* Brookfield Asset management - animation and text - iconrow animation */}
-        {/* <ParallaxLayer
-          offset={5}
-          speed={2.5}
-          style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        ><Frame6 /></ParallaxLayer> */}
-        {/* Proven strategy - animation and text - hand animation */}
-        {/* <ParallaxLayer
-          offset={6}
-          speed={2.5}
-          style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        ><Frame7 /></ParallaxLayer> */}
+      <ParallaxLayer
+          offset={3}
+          speed={0.5}
+           className='flex justify-center bg-white'
+      >
+
+         <FifthFrame />
+      
+      </ParallaxLayer>
+      {/* Page 8 */}
+      {/* Proven strategy - animation and text - hand animation */}
+        <ParallaxLayer
+          offset={4}
+          speed={0.5}
+          className='flex flex-col text-center justify-center items-center '
+      >
+
+        <SixthFrame />
+        
+      </ParallaxLayer>
+      {/* Page 9 */}
         {/* Proven strategy - animation and text - hand animation - lower slide pulls up 30% with text */}
-        {/* <ParallaxLayer
-          offset={7}
-          speed={2.5}
-          style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-        ><Frame8 /></ParallaxLayer> */}
+      <ParallaxLayer
+          offset={5}
+          speed={0.5}
+          className=' '
+      >
+
+        <SeventhFrame />
+
+      </ParallaxLayer>
 </Parallax>
   
   )
