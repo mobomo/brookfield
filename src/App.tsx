@@ -15,7 +15,7 @@ const App = () => {
   return (
     <Parallax
       // config={{ duration: 10 }}
-      pages={5}
+      pages={6}
       style={{ top: '0', left: '0', backgroundColor: '#002A4E' , bottom:'0'}}>
       {/* Page 1 */}
            {/* Intro text only */}
@@ -77,7 +77,7 @@ const App = () => {
       <ParallaxLayer
             offset={2}
         //  offset={0.1}
-            speed={0.9}
+            speed={1}
         className='flex flex-col text-center justify-center items-center bg-blue-300 h-40'
         style={{ height: '80vh' }}
       >
@@ -90,8 +90,8 @@ const App = () => {
       <ParallaxLayer
           offset={2.1}
         //  offset={0.9}
-          speed={1.3}
-       
+          speed={1}
+       sticky={{ start: 2.2, end: 2.6 }}
       >
 
          <FifthFrame />
@@ -100,9 +100,10 @@ const App = () => {
       {/* Page 8 */}
       {/* Proven strategy - animation and text - hand animation */}
         <ParallaxLayer
-          offset={3}
-          speed={0.1}
-          className='flex flex-col text-center justify-center items-center '
+          offset={3.5}
+          speed={1}
+        className='flex flex-col text-center justify-center items-center '
+        sticky={{ start: 4, end: 4.5 }}
       >
 
         <SixthFrame />
@@ -111,10 +112,11 @@ const App = () => {
       {/* Page 9 */}
         {/* Proven strategy - animation and text - hand animation - lower slide pulls up 30% with text */}
       <ParallaxLayer
-          offset={4}
-          speed={0.1}
+          offset={5}
+          speed={1}
         className='-mb-80'
         style={{ height: '-40vh' }}
+        sticky={{ start: 5.5, end: 6}}
       >
 
         <SeventhFrame />

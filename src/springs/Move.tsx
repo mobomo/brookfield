@@ -10,12 +10,12 @@ const Move = ({ children, twstyles, duration, delay }: { children: ReactNode, tw
   //  to: { y: !inView ? 24 : 0,opacity: !inView ? 0 : 1},
    to:{ transform: !inView ? "translateY(250px)" : "translateY(0px)" },
    delay: 0,
-    config: { duration: 300 },
+    config: { duration: 800 },
   });
   return (
     <Waypoint
       onEnter={() => setInview(true)}
-      onLeave={() => setInview(false)}
+      // onLeave={() => setInview(false)}
 
     >
       <animated.div className={twstyles}

@@ -16,7 +16,7 @@ const Shape = ({ children, twstyles, duration, delay }: { children: ReactNode, t
   return (
     <Waypoint
       onEnter={() => setInview(true)}
-      onLeave={() => setInview(false)}
+      // onLeave={() => setInview(false)}
     >
       <animated.div 
         style={{
