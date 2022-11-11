@@ -8,9 +8,9 @@ const Move = ({ children, twstyles, duration, delay }: { children: ReactNode, tw
   const [inView, setInview] = React.useState(false);
   const props = useSpring({
   //  to: { y: !inView ? 24 : 0,opacity: !inView ? 0 : 1},
-   to:{ transform: !inView ? "translateY(200px)" : "translateY(0px)" },
+   to:{ transform: !inView ? "translateY(250px)" : "translateY(0px)" },
    delay: 0,
-    config: { duration: 1000 },
+    config: { duration: 300 },
   });
   return (
     <Waypoint

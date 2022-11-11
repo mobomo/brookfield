@@ -4,11 +4,11 @@ import Opacity from '../springs/Opacity'
 export const ThirdFrame = () => {
   return (
     <div className='flex mt-40'>
-      <Opacity  delay={500} duration={2000} twstyles={'-mt-28 mr-10'}>
+      <Opacity  delay={500} duration={1000} twstyles={'-mt-28 mr-10'}>
       <Animation4 />
       </Opacity>
       <div className='flex flex-col'>
-        <Opacity delay={500} duration={2000} twstyles={'flex flex-col w-97  justify-center text-left gap-3 mb-20'}>
+        <Opacity delay={500} duration={1000} twstyles={'flex flex-col w-97  justify-center text-left gap-3 mb-20'}>
                   <div className='flex text-white text-4.75xl  font-mediumplus font-playfair'>
                     Another way to invest with Brookfield
                   </div>

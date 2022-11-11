@@ -90,7 +90,7 @@ const App = () => {
       <ParallaxLayer
           offset={2.1}
         //  offset={0.9}
-          speed={0.9}
+          speed={1.3}
        
       >
 
