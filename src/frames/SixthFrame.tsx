@@ -1,6 +1,7 @@
 import { Animation9 } from '../Animations'
 import Opacity from '../springs/Opacity'
 
+
 export const SixthFrame = () => {
   return (
     <div className='flex flex-col items-center text-white'>
@@ -15,7 +16,7 @@ export const SixthFrame = () => {
         <div>Leveraging a history of successfully providing public market access to Brookfield's investing expertise</div>
       </div>
       <div className='flex justify-center items-center'>
-        <Opacity  delay={2000} duration={5000} twstyles={''}><Animation9 /></Opacity>
+        <Opacity  delay={500} duration={2000} twstyles={''}><Animation9 /></Opacity>
         <div className='w-977 text-left'>
           <div>...allowing investors the flexibility to invest in the Brookfield businesses they prefer</div>
           <div>All with the backing of Brookfield.</div>

@@ -8,8 +8,8 @@ const Move = ({ children }: { children: ReactNode; }) => {
   const [inView, setInview] = React.useState(false);
   const props = useSpring({
   //  to: { y: !inView ? 24 : 0,opacity: !inView ? 0 : 1},
-   to:{ transform: !inView ? "translateX(500px)" : "translateX(0px)" },
-   delay: 1000,
+   to:{ transform: !inView ? "translateY(200px)" : "translateY(0px)" },
+   delay: 0,
     config: { duration: 1000 },
   });
   return (

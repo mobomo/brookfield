@@ -61,7 +61,7 @@ export const Animation6 = () => {
 };
 export const Animation7 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.icon1v2 ,
     }
@@ -70,7 +70,7 @@ export const Animation7 = () => {
 
 export const Animation8 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.icon2 ,
     }

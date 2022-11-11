@@ -4,7 +4,7 @@ import Opacity from '../springs/Opacity'
 export const ThirdFrame = () => {
   return (
     <div className='flex'>
-      <Opacity  delay={2000} duration={5000} twstyles={''}>
+      <Opacity  delay={500} duration={2000} twstyles={''}>
       <Animation4 />
       </Opacity>
       <div className='flex flex-col'>

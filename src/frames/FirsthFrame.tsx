@@ -5,7 +5,7 @@ import Opacity from '../springs/Opacity'
 export const FirsthFrame = () => {
   return (
     <div className='flex flex-col text-center  w-4/5  items-center'>
-      <Opacity  delay={3000} duration={8000} twstyles={'flex justify-center'}>
+      <Opacity  delay={2000} duration={5000} twstyles={'flex justify-center'}>
         <Animation1 />
       </Opacity>
       <div className='mt-10'>

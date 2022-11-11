@@ -7,9 +7,12 @@ const Opacity = ({ children, delay, duration, twstyles }: { children: ReactNode,
   const [inView, setInview] = React.useState(false);
     const props = useSpring({
     // from: { y: 70, opacity: 0 },
+      loop: false,
+
     to: { y: !inView ? 24 : 0,opacity: !inView ? 0 : 1},
       delay: delay,
-     config: { duration: duration },
+      config: { duration: duration },
+      cancel: false
     })
   return (
     <Waypoint onEnter={() => setInview(true)}>
