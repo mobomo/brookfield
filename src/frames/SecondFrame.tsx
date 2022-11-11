@@ -7,10 +7,8 @@ export const SecondFrame = () => {
     <div className='flex flex-col text-center justify-center items-center'>
     
           <div className='flex flex-col gap-3'>
-              <Opacity>
-                <div className='flex text-white text-3xl  w-9775 text-center font-semibold font-opensans leading-9'>
+              <Opacity delay={3000} duration={7000} twstyles={'flex text-white text-3xl  w-9775 text-center font-semibold font-opensans leading-9'}>
                       We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
-                </div>
               </Opacity>
             
               <div className='items-center  flex gap-3 w-full justify-center'>
@@ -34,9 +32,9 @@ export const SecondFrame = () => {
                     Each with day-to-day operations preserved and the focus of a dedicated management team.
                   </div>
               </div>
-              <div>
+              <Opacity delay={2000} duration={5000} twstyles={''}>
                 <Animation3 />
-              </div>
+              </Opacity>
           </div>
 
           <div className='-mt-24'>

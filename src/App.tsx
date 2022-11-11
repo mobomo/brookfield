@@ -54,7 +54,7 @@ const App = () => {
        {/* Two distinct offerings - text and animation */}
       <ParallaxLayer
             offset={1}
-        speed={0.9}
+        speed={0.7}
         className='flex justify-center items-center '
       >
         
@@ -65,7 +65,7 @@ const App = () => {
         {/* Another way to invest with Brookfield - text and animation */}
       <ParallaxLayer
             offset={1.8}
-            speed={0.1}
+            speed={0.6}
             className='flex flex-col justify-center items-center '
       >
      
@@ -75,8 +75,8 @@ const App = () => {
       {/* Page 6 */}
         {/* Brookfield corporation - animation and text */}
       <ParallaxLayer
-            offset={2.5}
-            speed={0.1}
+            offset={2}
+            speed={0.7}
             className='flex flex-col text-center justify-center items-center bg-blue-300'
       >
 

@@ -1,5 +1,5 @@
 import { Animation5 } from '../Animations'
-
+import Opacity from '../springs/Opacity'
 
 export const FourthFrame = () => {
   return (
@@ -15,10 +15,10 @@ export const FourthFrame = () => {
                     <li>Retains / Reinvests the bulk of its earnings</li>
                   </div>
         </div>
-        <div>
+        <Opacity  delay={2000} duration={5000} twstyles={''}>
 
       <Animation5 />
-        </div>
+        </Opacity>
     </div>
   )
 }

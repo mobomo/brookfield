@@ -1,12 +1,12 @@
 import { Animation4 } from '../Animations'
-import { Frame000 } from '../frames'
+import Opacity from '../springs/Opacity'
 
 export const ThirdFrame = () => {
   return (
     <div className='flex'>
-      <div>
+      <Opacity  delay={2000} duration={5000} twstyles={''}>
       <Animation4 />
-      </div>
+      </Opacity>
       <div className='flex flex-col'>
         <div className='flex flex-col w-97  justify-center text-left gap-3'>
                   <div className='flex text-white text-4.75xl  font-mediumplus font-playfair'>

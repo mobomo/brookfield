@@ -1,4 +1,5 @@
 import { Animation5, Animation6 } from '../Animations'
+import Opacity from '../springs/Opacity'
 
 export const FifthFrame = () => {
   return (
@@ -21,13 +22,13 @@ export const FifthFrame = () => {
                         <li >[Higher] dividend payout ratio</li>
                       </div>
                 </div>
-                <div>
+                <Opacity  delay={2000} duration={5000} twstyles={''}>
                     <Animation5 />
-                </div>
+                </Opacity>
           </div>
-          <div className='w-full'>
+          <Opacity  delay={2000} duration={5000} twstyles={'w-full'}>
               <Animation6 />
-          </div>
+          </Opacity>
     </div>
   )
 }
