@@ -4,7 +4,7 @@ import { Waypoint } from "react-waypoint";
 import React, { ReactNode } from 'react'
 
 
-const Move = ({ children }: { children: ReactNode; }) => {
+const Move = ({ children, twstyles, duration, delay }: { children: ReactNode, twstyles:string, duration:number, delay:number }) => {
   const [inView, setInview] = React.useState(false);
   const props = useSpring({
   //  to: { y: !inView ? 24 : 0,opacity: !inView ? 0 : 1},
@@ -14,7 +14,7 @@ const Move = ({ children }: { children: ReactNode; }) => {
   });
   return (
     <Waypoint onEnter={() => setInview(true)}>
-      <animated.div className="bg-white w-full h-72 flex justify-center items-center "
+      <animated.div className={twstyles}
       //  style={spring}
         style={props}
       >

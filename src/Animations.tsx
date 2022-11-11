@@ -20,7 +20,7 @@ export const Animation2 = () => {
     const defaultOptions = {
       loop: true,
       autoplay: true, 
-      animationData: animations.anim1 ,
+      animationData: animations.anim4 ,
     }
     return  <Lottie options={defaultOptions} />
 };

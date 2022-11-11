@@ -1,4 +1,4 @@
-import { Animation5 } from '../Animations'
+import { Animation2 } from '../Animations'
 import Opacity from '../springs/Opacity'
 
 export const FourthFrame = () => {
@@ -17,7 +17,7 @@ export const FourthFrame = () => {
         </div>
         <Opacity  delay={100} duration={100} twstyles={''}>
 
-      {/* <Animation5 /> */}
+      <Animation2 />
         </Opacity>
     </div>
   )

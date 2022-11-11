@@ -19,8 +19,11 @@ import anim1 from './06_Animation_v01.json';
 
 
 const animations = {
+  // hand
   anim1,
+  // hand
   anim2,
+  // CM
   anim3,
   anim4,
   anim5,
@@ -34,8 +37,10 @@ const animations = {
   icon4v2,
   icon5,
   icon5v2,
+  // iconos
   iconRow,
   iconRowv2,
+  // city
   loader,
 };
 

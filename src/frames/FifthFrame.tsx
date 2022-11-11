@@ -5,10 +5,10 @@ import Move from '../springs/Move'
 
 export const FifthFrame = () => {
   return (
-    <Move >
-      <Shape duration={ 300} delay={0} twstyles='flex flex-col bg-white p-28 justify-center text-brandblue w-full'>
+    <Move twstyles={ ''}  duration={0} delay={0}>
+      <Shape duration={ 300} delay={100} twstyles='flex flex-col bg-white px-32 py-0 pb-20 justify-center text-brandblue w-full '>
           <div className='flex bg-white '>
-                <div className='flex flex-col  justify-center text-left gap-3'>
+                <div className='flex flex-col  justify-center text-left gap-1'>
                       <div className='flex  text-4.5xl  font-semibold font-playfair'>
                         Brookfield Asset Management
                       </div>
