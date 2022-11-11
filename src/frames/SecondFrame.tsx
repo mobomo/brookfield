@@ -1,5 +1,5 @@
 import {Animation3} from '../Animations'
-
+import Opacity from '../springs/Opacity'
 
 
 export const SecondFrame = () => {
@@ -7,9 +7,11 @@ export const SecondFrame = () => {
     <div className='flex flex-col text-center justify-center items-center'>
     
           <div className='flex flex-col gap-3'>
-              <div className='flex text-white text-3xl  w-9775 text-center font-semibold font-opensans leading-9'>
-                We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
-              </div>
+              <Opacity>
+                <div className='flex text-white text-3xl  w-9775 text-center font-semibold font-opensans leading-9'>
+                      We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
+                </div>
+              </Opacity>
             
               <div className='items-center  flex gap-3 w-full justify-center'>
                   <div className='mr-72 mt-10'>

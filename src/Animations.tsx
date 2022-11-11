@@ -10,7 +10,7 @@ export const Animation1 = () => {
       animationData: animations.loader ,
     }
   return (
-    <div className='w-6/7'>
+    <div className='w-6/7 '>
       <Lottie options={defaultOptions} />
       </div>
     )
