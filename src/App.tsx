@@ -53,7 +53,7 @@ const App = () => {
       {/* Page 4 */}
        {/* Two distinct offerings - text and animation */}
       <ParallaxLayer
-            offset={1}
+            offset={1.1}
         speed={0.9}
         className='flex justify-center items-center '
       >

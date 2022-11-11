@@ -13,7 +13,11 @@ const Move = ({ children, twstyles, duration, delay }: { children: ReactNode, tw
     config: { duration: 1000 },
   });
   return (
-    <Waypoint onEnter={() => setInview(true)}>
+    <Waypoint
+      onEnter={() => setInview(true)}
+      onLeave={() => setInview(false)}
+
+    >
       <animated.div className={twstyles}
       //  style={spring}
         style={props}

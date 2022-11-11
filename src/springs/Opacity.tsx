@@ -9,13 +9,19 @@ const Opacity = ({ children, delay, duration, twstyles }: { children: ReactNode,
     // from: { y: 70, opacity: 0 },
       loop: false,
 
-    to: { y: !inView ? 24 : 0,opacity: !inView ? 0 : 1},
+    to: { y: !inView ? 0 : 0,opacity: !inView ? 0 : 1},
       delay: delay,
       config: { duration: duration },
-      cancel: false
     })
   return (
-    <Waypoint onEnter={() => setInview(true)}>
+    <Waypoint
+      onEnter={() => setInview(true)}
+      onLeave={() => {
+        console.log("leave");
+        
+        setInview(false);
+      }}
+    >
       <animated.div style={props} className={twstyles}>
         {children}
       </animated.div>

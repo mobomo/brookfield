@@ -7,7 +7,7 @@ export const SecondFrame = () => {
     <div className='flex flex-col text-center justify-center items-center'>
     
           <div className='flex flex-col gap-3'>
-              <Opacity delay={2000} duration={7000} twstyles={'flex text-white text-3xl  w-9775 text-center font-semibold font-opensans leading-9'}>
+              <Opacity delay={2000} duration={5000} twstyles={'flex text-white text-3xl  w-9775 text-center font-semibold font-opensans leading-9'}>
                       We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
               </Opacity>
             
@@ -37,7 +37,7 @@ export const SecondFrame = () => {
               </Opacity>
           </div>
 
-          <Opacity delay={2000} duration={7000} twstyles='-mt-24'>
+          <Opacity delay={2000} duration={5000} twstyles='-mt-24 ml-10'>
                 <svg width="554" height="139" viewBox="0 0 554 139" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="0.5" x2="0.5" y2="100" stroke="#F5F5F5"/>
                 <line x1="553.5" y1="139" x2="553.5" y2="99" stroke="#F5F5F5"/>
