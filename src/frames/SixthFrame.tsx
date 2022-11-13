@@ -4,7 +4,7 @@ import Opacity from '../springs/Opacity'
 
 export const SixthFrame = () => {
   return (
-    <div className='flex flex-col items-center text-white'>
+    <div className='flex flex-col items-center text-white mt-80 mb-20'>
       <div className='w-97'>
         <div className='flex justify-center mb-8'>
           <svg width="7" height="84" viewBox="0 0 7 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +16,7 @@ export const SixthFrame = () => {
         <div>Leveraging a history of successfully providing public market access to Brookfield's investing expertise</div>
       </div>
       <div className='flex justify-center items-center'>
-        <Opacity  delay={500} duration={2000} twstyles={''}><Animation9 /></Opacity>
+  <Animation9 />
         <div className='w-977 text-left'>
           <div>...allowing investors the flexibility to invest in the Brookfield businesses they prefer</div>
           <div>All with the backing of Brookfield.</div>

@@ -4,19 +4,38 @@ import { Waypoint } from "react-waypoint";
 import React, { ReactNode } from 'react'
 
 
-const Move = ({ children, twstyles, duration, delay }: { children: ReactNode, twstyles:string, duration:number, delay:number }) => {
+interface MoveType {
+  children?: ReactNode,
+  twstyles?: string,
+  duration?: number,
+  delay?: number,
+  bottomOffset?: string,
+  topOffset?: string,
+  moveY?: string,
+  Enter?: boolean,
+  Leave?: boolean,
+}
+
+
+const Move = ({ children, twstyles='flex', duration=800, delay=0, bottomOffset='300px', topOffset='0px', moveY='250px', Enter=true, Leave=true }:MoveType) => {
   const [inView, setInview] = React.useState(false);
   const props = useSpring({
   //  to: { y: !inView ? 24 : 0,opacity: !inView ? 0 : 1},
-   to:{ transform: !inView ? "translateY(250px)" : "translateY(0px)" },
-   delay: 0,
-    config: { duration: 800 },
+   to:{ transform: !inView ? `translateY(${moveY})` : "translateY(0px)", opacity: !inView ? 0 : 1 },
+   delay: delay,
+    config: { duration: duration },
   });
   return (
     <Waypoint
       onEnter={() => setInview(true)}
-      // onLeave={() => setInview(false)}
-
+      // onLeave={() => {
+      //   setInview(false)
+      //   console.log('leaving')
+      // }}
+      bottomOffset={!inView?bottomOffset:'0px'}
+      // bottomOffset={'0px'}
+      topOffset={!inView?topOffset:'0px'}
+      // topOffset={topOffset}
     >
       <animated.div className={twstyles}
       //  style={spring}

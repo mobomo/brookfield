@@ -5,8 +5,8 @@ import Move from '../springs/Move'
 
 export const FifthFrame = () => {
   return (
-    <Move twstyles={ ''}  duration={300} delay={1000}>
-      <Shape duration={ 300} delay={1000} twstyles='flex flex-col bg-white px-32 py-0 pb-20 justify-center text-brandblue w-full '>
+     <Move topOffset={'0px'} bottomOffset={'100px'} delay={1200} duration={800}   twstyles={'flex justify-center w-full bg-white flex-col text-brandblue px-60 pb-20 -mt-40'} Enter={true} Leave={false}>
+       {/* <Shape duration={ 300} delay={5000} twstyles='flex flex-col bg-white px-32 py-0 pb-20 justify-center text-brandblue w-full '> */}
           <div className='flex bg-white '>
                 <div className='flex flex-col  justify-center text-left gap-1'>
                       <div className='flex  text-4.5xl  font-semibold font-playfair'>
@@ -26,15 +26,15 @@ export const FifthFrame = () => {
                       </div>
                 </div>
           
-        <Opacity delay={0} duration={0} twstyles={''}>
-          <Animation5 />
-        </Opacity>
+
+                <div className='-mt-0'><Animation5 /></div>
+
          
           </div>
-          <Opacity  delay={0} duration={1000} twstyles={'w-full'}>
+
               <Animation6 />
-          </Opacity>
-    </Shape>
+
+     {/* </Shape> */}
     </Move>
   )
 }

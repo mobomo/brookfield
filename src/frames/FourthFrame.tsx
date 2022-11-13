@@ -15,10 +15,13 @@ export const FourthFrame = () => {
                     <li>Retains / Reinvests the bulk of its earnings</li>
                   </div>
         </div>
-        <Opacity  delay={100} duration={100} twstyles={''}>
+
+
+            
 
       <Animation2 />
-        </Opacity>
+
+ 
     </div>
   )
 }

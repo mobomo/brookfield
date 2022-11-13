@@ -21,6 +21,7 @@ const Opacity = ({ children, delay, duration, twstyles }: { children: ReactNode,
         
         setInview(false);
       }}
+      
     >
       <animated.div style={props} className={twstyles}>
         {children}

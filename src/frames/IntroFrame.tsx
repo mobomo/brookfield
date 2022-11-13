@@ -17,10 +17,10 @@ const IntroFrame = () => {
   })
   return (
     <>
-      <animated.div className='flex flex-col text-center justify-center items-center' style={stylesFrame0}>
+      <animated.div className='flex flex-col text-center justify-center items-center fixed top-0' style={stylesFrame0}>
             <Frame0 />
         </animated.div>
-        <animated.div className='flex flex-col text-center justify-center items-center' style={stylesFrame00}>
+        <animated.div className='flex flex-col text-center justify-center items-center mt-14' style={stylesFrame00}>
             <Frame00 />
       </animated.div>
     </>

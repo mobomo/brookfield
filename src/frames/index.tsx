@@ -2,7 +2,7 @@
 
 export const FrameTitle = () => {
   return (
-      <div className='flex text-white  text-6xl  justify-center mb-20 font-opensans font-black'>Brookfield</div>
+      <div className='flex text-white  text-6xl  justify-center  font-opensans font-black'>Brookfield</div>
   )
 }
 
