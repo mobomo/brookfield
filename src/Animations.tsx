@@ -5,7 +5,7 @@ import animations from './jfiles'
 
 export const Animation1 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.loader ,
     }
@@ -18,7 +18,7 @@ export const Animation1 = () => {
 
 export const Animation2 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim4 ,
     }
@@ -27,7 +27,7 @@ export const Animation2 = () => {
 
 export const Animation3 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim2 ,
     }
@@ -36,7 +36,7 @@ export const Animation3 = () => {
 
 export const Animation4 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim3 ,
     }
@@ -44,7 +44,7 @@ export const Animation4 = () => {
 };
 export const Animation5 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim5 ,
     }
@@ -53,7 +53,7 @@ export const Animation5 = () => {
 
 export const Animation6 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.iconRow,
     }
@@ -79,7 +79,7 @@ export const Animation8 = () => {
 
 export const Animation9 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.anim1 ,
     }

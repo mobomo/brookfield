@@ -86,10 +86,10 @@ const App = () => {
       {/* Page 6 */}
         {/* Brookfield corporation - animation and text */}
       <ParallaxLayer
-            offset={3}
+            offset={2.8}
         //  offset={0.1}
             speed={0}
-        className='flex  text-center justify-center items-center -mt-40 bg-blue-300 '
+        className='flex  text-center justify-center items-center -mt-20 bg-blue-300 '
         style={{ height: '60vh' }}
         // sticky={{ start: 3.5, end: 4 }}
       >
@@ -102,11 +102,11 @@ const App = () => {
       {/* Page 7 */}
         {/* Brookfield Asset management - animation and text - iconrow animation */}
       <ParallaxLayer
-          offset={3.1}
+          offset={3}
         //  offset={0.9}
         speed={0}
         style={{ height: '40vh' }}
-       sticky={{ start: 3.1, end: 3.5 }}
+       sticky={{ start: 3, end: 3.5 }}
       >
  {/* <Move topOffset={'0px'} bottomOffset={'100px'} delay={0} duration={400} twstyles={'flex justify-center'} Enter={true} Leave={true}> */}
  
