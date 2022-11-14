@@ -19,7 +19,7 @@ export const SixthFrame = () => {
   <Animation9 />
         <div className='w-977 text-left'>
           <div>...allowing investors the flexibility to invest in the Brookfield businesses they prefer</div>
-          <div>All with the backing of Brookfield.</div>
+          <div className='flex mt-8'>All with the backing of Brookfield.</div>
         </div>
       </div>
       <div>

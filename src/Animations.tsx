@@ -5,12 +5,12 @@ import animations from './jfiles'
 
 export const Animation1 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.loader ,
     }
   return (
-    <div className='w-6/7 '>
+    <div className=' mt-40 '>
       <Lottie options={defaultOptions} />
       </div>
     )
@@ -18,7 +18,7 @@ export const Animation1 = () => {
 
 export const Animation2 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.anim4 ,
     }
@@ -27,7 +27,7 @@ export const Animation2 = () => {
 
 export const Animation3 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.anim2 ,
     }
@@ -36,7 +36,7 @@ export const Animation3 = () => {
 
 export const Animation4 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.anim3 ,
     }
@@ -61,7 +61,7 @@ export const Animation6 = () => {
 };
 export const Animation7 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.icon1v2 ,
     }
@@ -70,7 +70,7 @@ export const Animation7 = () => {
 
 export const Animation8 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.icon2 ,
     }
@@ -79,11 +79,11 @@ export const Animation8 = () => {
 
 export const Animation9 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.anim1 ,
     }
-    return  <Lottie options={defaultOptions} />
+    return  <div className='w-80  '><Lottie options={defaultOptions} /></div>
 };
 
 

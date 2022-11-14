@@ -28,7 +28,7 @@ const App = () => {
         offset={0}
         speed={1}
         className='flex flex-col text-center justify-center items-center'
-        style={{  height: '50vh' }}
+        style={{  height: '80vh' }}
       >
 
         <TitleFrame />
@@ -59,7 +59,7 @@ const App = () => {
       <ParallaxLayer
             offset={1.25}
         speed={0}
-        className='flex justify-center items-center mt-40 '
+        className='flex justify-center items-center mt-60 '
           //  sticky={{ start: 2, end: 2.25 }}
         style={{ height: '60vh' }} 
       >

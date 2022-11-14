@@ -21,7 +21,11 @@ const Move = ({ children, twstyles='flex', duration=800, delay=0, bottomOffset='
   const [inView, setInview] = React.useState(false);
   const props = useSpring({
   //  to: { y: !inView ? 24 : 0,opacity: !inView ? 0 : 1},
-   to:{ transform: !inView ? `translateY(${moveY})` : "translateY(0px)", opacity: !inView ? 0 : 1 },
+    to: {
+      transform: !inView ? `translateY(${moveY})` : "translateY(0px)",
+      opacity: !inView ? 0 : 1,
+      scale: inView ? 1 : 0.2,
+    },
    delay: delay,
     config: { duration: duration },
   });
