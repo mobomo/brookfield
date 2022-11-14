@@ -3,7 +3,10 @@ import { useSpring, animated } from 'react-spring'
 import { Waypoint } from "react-waypoint";
 import React, { ReactNode } from 'react'
 
-const Opacity = ({ children, delay, duration, twstyles }: { children: ReactNode,delay:number, duration:number, twstyles:string }) => {
+const Opacity = (
+  { children, delay, duration, twstyles, topOffset = '0px', bottomOffset = '0px' }:
+    { children: ReactNode, delay?: number, duration?: number, twstyles?: string, topOffset?: string, bottomOffset?: string; }) =>
+{
   const [inView, setInview] = React.useState(false);
     const props = useSpring({
     // from: { y: 70, opacity: 0 },
@@ -21,6 +24,8 @@ const Opacity = ({ children, delay, duration, twstyles }: { children: ReactNode,
         
         setInview(false);
       }}
+      topOffset={topOffset}
+      bottomOffset={bottomOffset}
       
     >
       <animated.div style={props} className={twstyles}>

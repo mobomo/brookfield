@@ -1,7 +1,33 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+
+      '3xl': '1850px',
+      // => @media (min-width: 1905px) { ... }
+
+      '4xl': '2300px',
+      // => @media (min-width: 2545px) { ... }
+    },
     extend: {
+      margin: {
+        '5px': '5px',
+        '120px': '120px',
+      },
       colors: {
         // "brandblue": "#082c5c",
           "brandblue": "#002A4E",
@@ -24,6 +50,12 @@ module.exports = {
         '9777': '25em',
         '70': '35em',
         '150': '75em',
+      },
+      margin: {
+        '-120': '-30rem',
+        '-100': '-25rem',
+        '-80': '-20rem',
+        '-60': '-15rem',
       },
       fontFamily: {
         'custom': ['ubuntu-mono', 'Ubuntu', 'sans-serif'],

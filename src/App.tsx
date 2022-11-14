@@ -9,10 +9,7 @@ import  FourthFrame  from './frames/FourthFrame'
 import  FifthFrame  from './frames/FifthFrame'
 import  SixthFrame  from './frames/SixthFrame'
 import  SeventhFrame  from './frames/SeventhFrame'
-// import { useSpring, animated } from 'react-spring'
-// import { Waypoint } from "react-waypoint";
-import React, {ReactNode} from 'react'
-import Move from './springs/Move'
+import Opacity from './springs/Opacity'
 
 
 const App = () => {
@@ -43,37 +40,39 @@ const App = () => {
             // sticky={{ start: 0.5, end: 1 }}
         style={{ height: '100vh' }}  
       >
-   
-          
         <IntroFrame />
 
-        <Move topOffset={'600px'} bottomOffset={'200px'} delay={0} duration={800} twstyles={'flex justify-center'} Enter={true} Leave={true}>
+        <Opacity  bottomOffset={'600px'} delay={0} duration={800} twstyles={'flex justify-center'}>
           
         <FirsthFrame />
 
-       </Move>
+       </Opacity>
 
       </ParallaxLayer>
       {/* Page 4 */}
        {/* Two distinct offerings - text and animation */}
       <ParallaxLayer
-            offset={1.25}
+        offset={1}
         speed={0}
-        className='flex justify-center items-center mt-60 '
+        className='flex justify-center items-center 2xl:mt-60  3xl:mt-80   4xl:mt-0  '
           //  sticky={{ start: 2, end: 2.25 }}
         style={{ height: '60vh' }} 
       >
         {/* <Move topOffset={'-150px'} bottomOffset={'0px'} delay={0} duration={400} twstyles={'flex justify-center mt-40'} Enter={true} Leave={true} moveY={'0px'}> */}
+        <Opacity bottomOffset={'600px'} delay={0} duration={800} twstyles={'flex justify-center'}>
+          
         <SecondFrame />
+
+        </Opacity>
          {/* </Move> */}
         
       </ParallaxLayer> 
       {/* Page 5
         {/* Another way to invest with Brookfield - text and animation */}
       <ParallaxLayer
-            offset={2.15}
+            offset={2}
             speed={0}
-        className='flex flex-col justify-center items-center  -mt-20'
+        className='flex flex-col justify-center items-center 2xl:mt-60  3xl:mt-0   4xl:mt-0  '
         // sticky={{ start: 3, end: 4 }}
          style={{ height: '80vh' }} 
       >
@@ -91,7 +90,7 @@ const App = () => {
             speed={0}
         className='flex  text-center justify-center items-center -mt-20 bg-blue-300 '
         style={{ height: '60vh' }}
-        // sticky={{ start: 3.5, end: 4 }}
+        // sticky={{ start: 2.5, end: 3 }}
       >
 
           
@@ -106,12 +105,12 @@ const App = () => {
         //  offset={0.9}
         speed={0}
         style={{ height: '40vh' }}
-       sticky={{ start: 3, end: 3.5 }}
+      //  sticky={{ start: 3, end: 3.5 }}
       >
  {/* <Move topOffset={'0px'} bottomOffset={'100px'} delay={0} duration={400} twstyles={'flex justify-center'} Enter={true} Leave={true}> */}
  
          <FifthFrame />
-  
+   
           {/* </Move> */}
             
 
@@ -123,12 +122,12 @@ const App = () => {
           offset={4}
           speed={0}
         className='flex flex-col text-center justify-center items-center mb-40 mt-40'
-        sticky={{ start: 4.1, end: 4.5 }}
+        // sticky={{ start: 4.1, end: 4.5 }}
          style={{ height: '60vh' }}
       >
 
         <SixthFrame />
-        
+   
       </ParallaxLayer>
       {/* Page 9 */}
         {/* Proven strategy - animation and text - hand animation - lower slide pulls up 30% with text */}
@@ -136,7 +135,7 @@ const App = () => {
           offset={5.6}
           speed={0}
         // className='-mb-80'
-        style={{ height: '40vh' }}
+        // style={{ height: '40vh' }}
         // sticky={{ start: 4, end: 4.5}}
       >
         <SeventhFrame />

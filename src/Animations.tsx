@@ -5,12 +5,12 @@ import animations from './jfiles'
 
 export const Animation1 = () => {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true, 
       animationData: animations.loader ,
     }
   return (
-    <div className=' mt-40 '>
+    <div className=' mt-0 '>
       <Lottie options={defaultOptions} />
       </div>
     )
