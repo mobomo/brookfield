@@ -29,7 +29,7 @@ const App = () => {
       <ParallaxLayer
         offset={0}
         speed={1}
-        className='flex flex-col text-center justify-center items-center'
+        className='flex flex-col text-center justify-center items-center '
         style={{  height: '80vh' }}
       >
         {/* <EighthFrame /> */}

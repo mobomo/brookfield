@@ -5,7 +5,7 @@ import animations from './jfiles'
 
 export const Animation1 = () => {
     const defaultOptions = {
-      loop: false,
+      loop: true,
       autoplay: true, 
       animationData: animations.loader ,
     }
