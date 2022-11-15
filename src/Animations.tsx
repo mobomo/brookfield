@@ -18,6 +18,15 @@ export const Animation1 = () => {
 
 export const Animation2 = () => {
     const defaultOptions = {
+      loop: false,
+      autoplay: true, 
+      animationData: animations.anim4 ,
+    }
+    return  <Lottie options={defaultOptions} />
+};
+
+export const Animation2a = () => {
+    const defaultOptions = {
       loop: true,
       autoplay: true, 
       animationData: animations.anim4 ,

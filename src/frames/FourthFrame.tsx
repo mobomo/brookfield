@@ -1,7 +1,11 @@
-import { Animation2 } from '../Animations'
+import { Animation2, Animation2a } from '../Animations'
 import Opacity from '../springs/Opacity'
+import { Waypoint } from 'react-waypoint'
+import React from 'react'
 
 export const FourthFrame = () => {
+  const [on, toggle] = React.useState(false);
+  
   return (
     <div className='flex text-brandblue'>
        <div className='flex flex-col w-97  justify-center text-left gap-3'>
@@ -17,9 +21,13 @@ export const FourthFrame = () => {
         </div>
 
 
-            
+  <Waypoint
+        onEnter={() => toggle(true)}
+        bottomOffset={'200px'}
+        onLeave={() => toggle(false)}
+      />
 
-    <div className='animate-layerOpacity'>  <Animation2 /></div>
+   <div className='animate-layerOpacity'> { on?<Animation2 />:<Animation2a /> }</div>
  
     </div>
   )

@@ -31,14 +31,14 @@ module.exports = {
       "fade-in-down": "fade-in-down 0.5s ease-out",
       expand: "expand 1.5s ease-out",
       move: "move 2s ease-out",
-      coverLayer: "coverLayer 1s ease-out",
+      coverLayer: "coverLayer 0.75s ease-out",
       layerOpacity: "layerOpacity 2s ease-out",
     },
 
 
 
     screens: {
-      'mobil': '410px',
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -96,10 +96,12 @@ module.exports = {
         '150': '37.5rem',
         '160': '40rem',
         '180': '45rem',
+          '190': '47.5rem',
         '200': '50rem',
          '210': '52.5rem',
         '220': '55rem',
         '240': '60rem',
+        '250': '65rem',
       },
       fontFamily: {
         'custom': ['ubuntu-mono', 'Ubuntu', 'sans-serif'],

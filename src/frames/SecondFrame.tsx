@@ -26,14 +26,14 @@ export const SecondFrame = () => {
 
           <div className='flex w-full  justify-center gap-10 -mt-32'>
               <div className='flex flex-col w-97  justify-center text-left gap-3'>
-                  <div className='flex text-white text-4.75xl md:text-2xl  font-mediumplus font-playfair'>
+                  <div className='flex text-white text-4.75xl  font-mediumplus font-playfair'>
                     Two entities, distinct offerings
                   </div>
                   <div className='flex text-white text-base  font-semibold '>
                     Each with day-to-day operations preserved and the focus of a dedicated management team.
                   </div>
               </div>
-              <Opacity>
+              <Opacity bottomOffset='400px' topOffset='-400px'>
                   <Animation3 />
               </Opacity>
           

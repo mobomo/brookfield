@@ -4,7 +4,7 @@ import { Waypoint } from "react-waypoint";
 import React, { ReactNode } from 'react'
 
 const Opacity = (
-  { children, delay=100, duration=600, twstyles, topOffset = '0px', bottomOffset = '0px' }:
+  { children, delay=0, duration=600, twstyles, topOffset = '0px', bottomOffset = '0px' }:
     { children: ReactNode, delay?: number, duration?: number, twstyles?: string, topOffset?: string, bottomOffset?: string; }) =>
 {
   const [inView, setInview] = React.useState(false);

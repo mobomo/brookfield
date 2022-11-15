@@ -4,7 +4,7 @@ import Opacity from '../springs/Opacity'
 export const ThirdFrame = () => {
   return (
     <div className='flex '>
-      <Opacity  twstyles='-mt-28 mr-10 '>
+      <Opacity  twstyles='-mt-28 mr-10 '  bottomOffset='400px' topOffset='-400px'>
       <Animation4 />
       </Opacity>
       <div className='flex flex-col'>

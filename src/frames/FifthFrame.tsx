@@ -43,16 +43,10 @@ export const FifthFrame = () => {
 
          
           </div>
-      <Waypoint
-        onEnter={() => {
-          toggle(true)
-          console.log('enter anim6')
-        }}
+  <Waypoint
+        onEnter={() => toggle(true)}
         bottomOffset={'200px'}
-        onLeave={() => {
-          console.log('leave');
-          toggle(false)
-        }}
+        onLeave={() => toggle(false)}
       />
       {on? <Animation6a/> :<Animation6 />}
     </div>
