@@ -55,7 +55,7 @@ const App = () => {
       <ParallaxLayer
         offset={1}
         speed={0}
-        className='flex justify-center items-center md:mt-0  xl:mt-120  2xl:mt-96  3xl:mt-96   4xl:mt-40 '
+        className='flex justify-center items-center md:mt-0 lg:mt-80 xl:mt-120  2xl:mt-96  3xl:mt-96   4xl:mt-40 '
         style={{ height: '60vh' }} 
       >
 
@@ -67,9 +67,9 @@ const App = () => {
       <ParallaxLayer
             offset={1.5}
             speed={0}
-        className='flex flex-col justify-center items-center xl:mt-180 2xl:mt-130  3xl:mt-140   4xl:mt-40  '
+        className='flex flex-col justify-center items-center lg:mt-140 xl:mt-180 2xl:mt-130  3xl:mt-140   4xl:mt-40  '
         // sticky={{ start: 3, end: 4 }}
-         style={{ height: '50vh' }} 
+         style={{ height: '55vh' }} 
       >
 
 <ThirdFrame />
@@ -83,8 +83,8 @@ const App = () => {
             offset={2}
         //  offset={0.1}
             speed={0}
-        className='flex  text-center justify-center items-center   bg-blue-300  xl:mt-200  2xl:mt-140  3xl:mt-150 4xl:mt-40 '
-        style={{ height: '60vh' }}
+        className='flex  text-center justify-center items-center  lg:mt-160 bg-blue-300  xl:mt-200  2xl:mt-140  3xl:mt-150 4xl:mt-40 '
+        style={{ height: '50vh' }}
         // sticky={{ start: 2.5, end: 3 }}
       >
 
@@ -97,12 +97,12 @@ const App = () => {
       <ParallaxLayer
         offset={2.2}
         speed={0}
-        style={{ height: '40vh' }}
-         className='flex  text-center justify-center items-center -mt-20 xl:mt-210  2xl:mt-140  3xl:mt-160 4xl:mt-32 '
+        style={{ height: '50vh' }}
+         className='flex  text-center justify-center items-center  -mt-20 lg:mt-140 xl:mt-210  2xl:mt-140  3xl:mt-160 4xl:mt-20 '
       >
         <Waypoint
           onEnter={() => setInview(true)}
-          bottomOffset={'500px'}
+          bottomOffset={'550px'}
           topOffset={'-400px'}
           onLeave={() => setInview(false)}
         />
@@ -114,7 +114,7 @@ const App = () => {
         <ParallaxLayer
           offset={2.8}
           speed={0}
-        className='flex flex-col text-center justify-center items-center mb-0 mt-0 xl:mt-240  2xl:mt-160 3xl:mt-200 4xl:mt-40 '
+        className='flex flex-col text-center justify-center items-center mb-0 mt-0 lg:mt-160 xl:mt-240  2xl:mt-160 3xl:mt-200 4xl:mt-40 '
          style={{ height: '30vh' }}
       >
         {/* <Waypoint
@@ -131,7 +131,7 @@ const App = () => {
       <ParallaxLayer
           offset={3.4}
         speed={0}
-         className=' 4xl:mt-10  3xl:mt-210 2xl:mt-160 xl:mt-250'
+         className=' 4xl:mt-10  3xl:mt-210 2xl:mt-160 xl:mt-250 lg:mt-180'
       >
         {/* <Waypoint
           onEnter={() => setInview7(true)}
