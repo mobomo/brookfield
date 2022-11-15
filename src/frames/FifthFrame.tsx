@@ -1,4 +1,4 @@
-import { Animation5, Animation5a, Animation6, Animation6a } from '../Animations'
+import { Animation5, Animation5a, Animation6, Animation6a, Animation7, Animation7a } from '../Animations'
 import Opacity from '../springs/Opacity'
 import Shape from '../springs/Shape'
 import Move from '../springs/Move'

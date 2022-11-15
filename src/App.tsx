@@ -103,8 +103,8 @@ const App = () => {
         <Waypoint
           onEnter={() => setInview(true)}
           bottomOffset={'400px'}
-          // topOffset={'-400px'}
-          // onLeave={() => setInview(false)}
+          topOffset={'-400px'}
+          onLeave={() => setInview(false)}
         />
        {inView? <FifthFrame />:null}
         

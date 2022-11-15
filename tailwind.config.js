@@ -4,12 +4,12 @@ module.exports = {
     keyframes: {
       coverLayer: {
         "0%": {
-          opacity: "0",
-          transform: "translateY(-50%) scale(0.4)",
+          opacity: "0.5",
+          transform: "translateY(20%) scale(0.6)",
         },
         "50%": {
-          opacity: "0.1",
-          transform: "translateY(50%) scale(0.7)",
+          opacity: "0.8",
+          transform: "translateY(30%) scale(0.8)",
         },
         "100%": {
           opacity: "1",
@@ -31,7 +31,7 @@ module.exports = {
       "fade-in-down": "fade-in-down 0.5s ease-out",
       expand: "expand 1.5s ease-out",
       move: "move 2s ease-out",
-      coverLayer: "coverLayer 2s ease-out",
+      coverLayer: "coverLayer 1s ease-out",
       layerOpacity: "layerOpacity 2s ease-out",
     },
 

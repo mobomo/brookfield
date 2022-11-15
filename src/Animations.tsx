@@ -79,9 +79,17 @@ export const Animation6a = () => {
 };
 export const Animation7 = () => {
     const defaultOptions = {
+      loop: false,
+      autoplay: true, 
+      animationData: animations.iconRowv2 ,
+    }
+    return  <Lottie options={defaultOptions} />
+};
+export const Animation7a = () => {
+    const defaultOptions = {
       loop: true,
       autoplay: true, 
-      animationData: animations.icon1v2 ,
+      animationData: animations.iconRowv2 ,
     }
     return  <Lottie options={defaultOptions} />
 };
