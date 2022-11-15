@@ -8,7 +8,7 @@ export const SecondFrame = () => {
     <div className='flex flex-col text-center justify-center items-center  '>
      {/* mobil:text-base  mobil:w-3/7 mobil:ml-40 */}
           <div className='flex flex-col gap-3'>
-              <div className='flex text-white text-3xl md:text-2xl w-9775 text-center font-semibold font-opensans leading-9'>
+              <div className='flex text-white text-3xl md:text-2xl max-w-9775 text-center font-semibold font-opensans leading-9 sm:text-xl'>
                       We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
               </div>
             

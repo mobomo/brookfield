@@ -55,7 +55,7 @@ const App = () => {
       <ParallaxLayer
         offset={1}
         speed={0}
-        className='flex justify-center items-center md:mt-80 lg:mt-80 xl:mt-120  2xl:mt-120  3xl:mt-96   4xl:mt-40 '
+        className='flex justify-center items-center  sm:-mt-40 md:mt-20 lg:mt-80 xl:mt-120  2xl:mt-120  3xl:mt-96   4xl:mt-40 '
         style={{ height: '60vh' }} 
       >
 
