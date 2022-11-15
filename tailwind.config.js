@@ -102,6 +102,8 @@ module.exports = {
         '220': '55rem',
         '240': '60rem',
         '250': '65rem',
+        '260': '70rem',
+        '270': '75rem',
       },
       fontFamily: {
         'custom': ['ubuntu-mono', 'Ubuntu', 'sans-serif'],
