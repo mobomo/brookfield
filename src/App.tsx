@@ -42,7 +42,7 @@ const App = () => {
       <ParallaxLayer
         offset={0.5}
         speed={0}
-        className='flex flex-col text-center justify-start items-center mobil:mt-20'
+        className='flex flex-col text-center justify-start items-center'
         style={{ height: '100vh' }}  
       >
         <IntroFrame />
@@ -55,7 +55,7 @@ const App = () => {
       <ParallaxLayer
         offset={1}
         speed={0}
-        className='flex justify-center items-center md:mt-0    2xl:mt-96  3xl:mt-96   4xl:mt-40  mobil:mt-80'
+        className='flex justify-center items-center md:mt-0    2xl:mt-96  3xl:mt-96   4xl:mt-40 '
         style={{ height: '60vh' }} 
       >
 
