@@ -1,4 +1,4 @@
-import { Animation5, Animation6 } from '../Animations'
+import { Animation5, Animation5a, Animation6, Animation6a } from '../Animations'
 import Opacity from '../springs/Opacity'
 import Shape from '../springs/Shape'
 import Move from '../springs/Move'
@@ -6,41 +6,17 @@ import { useSpring, animated } from 'react-spring'
 import React, { ReactNode } from 'react'
 import Lottie from 'react-lottie';
 import animations from '../jfiles'
+import { Waypoint } from 'react-waypoint'
 
 
-
-
-const Mov = ({ children }:{children:ReactNode}) => {
-   const [on, toggle] = React.useState(false);
-
-    const props = useSpring({
-    to: {
-      transform: on ? 'translate3d(0,0,0)' : 'translate3d(0,200px,0)',
-      opacity: on ? 1 : 0.5,
-      scale: on ? 2 : 1,
-    },
-    config: { duration: 500 },
-    })
-  
-  
-  return (
-
-    <animated.div
-        style={props}
-        className= {`flex w-full h-full bg-purple-400 justify-center items-center`}
-        onClick={() => toggle(!on)}
-    >
-      {children}
-    </animated.div>
-
-  )
-}
 
 export const FifthFrame = () => {
 
+  const [on, toggle] = React.useState(false);
+
   return (
-     <Move topOffset={'0px'} bottomOffset={'200px'} delay={0} duration={300}   twstyles={'flex justify-center w-full bg-white flex-col text-brandblue px-60 pb-20 -mt-48'} Enter={true} Leave={false}>
-    {/* <div className='flex justify-center w-full bg-white flex-col text-brandblue px-60 pb-20 -mt-48'> */}
+    //  <div topOffset={'0px'} bottomOffset={'200px'} delay={0} duration={300}   twstyles={'flex justify-center w-full bg-white flex-col text-brandblue px-60 pb-20 -mt-48'} Enter={true} Leave={false}>
+    <div className='flex justify-center w-full bg-white flex-col text-brandblue px-60 pb-20  animate-coverLayer '> 
           <div className='flex bg-white justify-center'>
                 <div className='flex flex-col  justify-center text-left gap-1'>
                       <div className='flex  text-4.5xl  font-semibold font-playfair'>
@@ -62,19 +38,24 @@ export const FifthFrame = () => {
           
 
         <div className='-mt-0 flex justify-center items-center self-center'>
-          <Animation5/>
+           {on? <Animation5a/> :<Animation5 />}
         </div>
 
          
           </div>
-
-              <Animation6   />
-
-    </Move>
-
-          
-
-
+      <Waypoint
+        onEnter={() => {
+          toggle(true)
+          console.log('enter anim6')
+        }}
+        bottomOffset={'200px'}
+        onLeave={() => {
+          console.log('leave');
+          toggle(false)
+        }}
+      />
+      {on? <Animation6a/> :<Animation6 />}
+    </div>
   )
 }
 

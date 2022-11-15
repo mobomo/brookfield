@@ -44,6 +44,14 @@ export const Animation4 = () => {
 };
 export const Animation5 = () => {
     const defaultOptions = {
+      loop: true,
+      autoplay: true, 
+      animationData: animations.anim5 ,
+    }
+    return  <Lottie options={defaultOptions} />
+}
+export const Animation5a = () => {
+    const defaultOptions = {
       loop: false,
       autoplay: true, 
       animationData: animations.anim5 ,
@@ -53,11 +61,21 @@ export const Animation5 = () => {
 
 export const Animation6 = () => {
     const defaultOptions = {
+      loop: true,
+      autoplay: true, 
+      animationData: animations.iconRow,
+    }
+      return <Lottie options={defaultOptions} />  
+};
+
+export const Animation6a = () => {
+    const defaultOptions = {
       loop: false,
       autoplay: true, 
       animationData: animations.iconRow,
     }
-    return  <Lottie options={defaultOptions} />
+
+      return <Lottie options={defaultOptions} />
 };
 export const Animation7 = () => {
     const defaultOptions = {

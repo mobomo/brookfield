@@ -19,8 +19,7 @@ export const FourthFrame = () => {
 
             
 
-      <Animation2 />
-
+    <div className='animate-layerOpacity'>  <Animation2 /></div>
  
     </div>
   )

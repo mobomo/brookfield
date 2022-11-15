@@ -1,18 +1,18 @@
 import { Animation4 } from '../Animations'
-
+import Opacity from '../springs/Opacity'
 
 export const ThirdFrame = () => {
   return (
-    <div className='flex -mt-40'>
-      <div  className='-mt-28 mr-10'>
+    <div className='flex '>
+      <Opacity  twstyles='-mt-28 mr-10 '>
       <Animation4 />
-      </div>
+      </Opacity>
       <div className='flex flex-col'>
-        <div className={'flex flex-col w-97  justify-center text-left gap-3 mb-20'}>
+        <div className={'flex flex-col w-97  justify-center text-left gap-3 mb-20  md:text-xl'}>
                   <div className='flex text-white text-4.75xl  font-mediumplus font-playfair'>
                     Another way to invest with Brookfield
                   </div>
-                  <div className='flex text-white text-base  font-semibold '>
+                  <div className='flex text-white text-base  font-semibold md:text-xl'>
                     Investors looking for a pure-play asset manager to invest in-one with the backing of a company with over [50] years of investing experience and a strong track record of delivering returns to shareholders</div>
               </div>
         <div className='mb-0 -mt-5'>

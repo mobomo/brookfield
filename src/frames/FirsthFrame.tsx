@@ -1,12 +1,16 @@
 import { Animation1 } from '../Animations'
 import { Frame000 } from '../frames'
-import Move from '../springs/Move'
+import { useEffect, useState, useRef } from 'react';
+import Opacity from '../springs/Opacity';
 
 export const FirsthFrame = () => {
+  const [on, toggle] = useState(false);
   return (
-    <div className='flex flex-col text-center  w-4/5  items-center mt-0'>
 
-        <Animation1 />
+         <Opacity twstyles='flex flex-col text-center  w-4/5  items-center  ' topOffset='-400px' bottomOffset='800px'>
+           
+
+        <div className='animate-layerOpacity'><Animation1 /></div>
 
       <div className='mt-5 '>
 
@@ -18,8 +22,9 @@ export const FirsthFrame = () => {
         
       </div>
    <Frame000 />
-    </div>
+    </Opacity>
+
   )
 }
 
-export default FirsthFrame
+export default FirsthFrame  

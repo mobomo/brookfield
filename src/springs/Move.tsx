@@ -40,7 +40,6 @@ const Move = ({ children, twstyles='flex', duration=800, delay=0, bottomOffset='
       // bottomOffset={'0px'}
       topOffset={!inView?topOffset:'0px'}
       // topOffset={topOffset}
-      debug={true}
     >
       <animated.div className={twstyles}
       //  style={spring}

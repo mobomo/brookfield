@@ -4,7 +4,7 @@ import { Waypoint } from "react-waypoint";
 import React, { ReactNode } from 'react'
 
 const Opacity = (
-  { children, delay, duration, twstyles, topOffset = '0px', bottomOffset = '0px' }:
+  { children, delay=100, duration=600, twstyles, topOffset = '0px', bottomOffset = '0px' }:
     { children: ReactNode, delay?: number, duration?: number, twstyles?: string, topOffset?: string, bottomOffset?: string; }) =>
 {
   const [inView, setInview] = React.useState(false);
@@ -20,7 +20,7 @@ const Opacity = (
     <Waypoint
       onEnter={() => setInview(true)}
       onLeave={() => {
-        console.log("leave");
+        // console.log("leave");
         
         setInview(false);
       }}

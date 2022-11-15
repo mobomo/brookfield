@@ -4,7 +4,7 @@ import Opacity from '../springs/Opacity'
 
 export const SixthFrame = () => {
   return (
-    <div className='flex flex-col items-center text-white mt-80 mb-20'>
+    <div className='flex flex-col items-center text-white mt-40 mb-0'>
       <div className='w-97'>
         <div className='flex justify-center mb-8'>
           <svg width="7" height="84" viewBox="0 0 7 84" fill="none" xmlns="http://www.w3.org/2000/svg">

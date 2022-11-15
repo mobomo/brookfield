@@ -9,14 +9,14 @@ export const FrameTitle = () => {
 
 export const Frame0 = () => {
   return (
-      <div className='flex text-white text-4xl w-70 text-center font-playfair font-mediumplus justify-center'>Evolving to offer the best of both worlds</div>
+      <div className='flex text-white text-4xl w-70 mobil:w-60 text-center font-playfair font-mediumplus justify-center mobil:text-2xl'>Evolving to offer the best of both worlds</div>
   )
 };
 
 
 export const Frame00 = () => {
   return (
-      <div className='flex text-white text-sm  w-100 text-center font-semibold'>We are leveraging a century of private investment experience owning and operating assets and twenty years of offering private investment opportunities to LP, creating a new opportunity for investors to benefit from our investment expertise</div>
+      <div className='flex text-white text-sm  w-100 text-center font-semibold mobil:mt-20 mobil:w-5/7'>We are leveraging a century of private investment experience owning and operating assets and twenty years of offering private investment opportunities to LP, creating a new opportunity for investors to benefit from our investment expertise</div>
   )
 };
 

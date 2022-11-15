@@ -1,7 +1,44 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    keyframes: {
+      coverLayer: {
+        "0%": {
+          opacity: "0",
+          transform: "translateY(-50%) scale(0.4)",
+        },
+        "50%": {
+          opacity: "0.1",
+          transform: "translateY(50%) scale(0.7)",
+        },
+        "100%": {
+          opacity: "1",
+          transform: "translateY(0) scale(1)",
+        },
+      },
+      layerOpacity: {
+        "0%": {
+          opacity: "0",
+        },
+        "100%": {
+          opacity: "1",
+        },
+      }
+
+
+    },
+    animation: {
+      "fade-in-down": "fade-in-down 0.5s ease-out",
+      expand: "expand 1.5s ease-out",
+      move: "move 2s ease-out",
+      coverLayer: "coverLayer 2s ease-out",
+      layerOpacity: "layerOpacity 2s ease-out",
+    },
+
+
+
     screens: {
+      'mobil': '410px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -24,10 +61,10 @@ module.exports = {
       // => @media (min-width: 2545px) { ... }
     },
     extend: {
-      margin: {
-        '5px': '5px',
-        '120px': '120px',
-      },
+      // margin: {
+      //   '5px': '5px',
+      //   '120px': '120px',
+      // },
       colors: {
         // "brandblue": "#082c5c",
           "brandblue": "#002A4E",
@@ -52,10 +89,17 @@ module.exports = {
         '150': '75em',
       },
       margin: {
-        '-120': '-30rem',
-        '-100': '-25rem',
-        '-80': '-20rem',
-        '-60': '-15rem',
+        '100': '25rem',
+        '120': '30rem',
+          '130': '32.5rem',
+        '140': '35rem',
+        '150': '37.5rem',
+        '160': '40rem',
+        '180': '45rem',
+        '200': '50rem',
+         '210': '52.5rem',
+        '220': '55rem',
+        '240': '60rem',
       },
       fontFamily: {
         'custom': ['ubuntu-mono', 'Ubuntu', 'sans-serif'],
