@@ -41,7 +41,7 @@ export const ThirdFrame = () => {
                   <div className='text-white md:text-4.75xl text-xl font-mediumplus font-playfair'>
                     Another way to invest with Brookfield
                   </div>
-                  <div className='text-white md:text-base text-ms  font-semibold md:text-xl'>
+                  <div className='text-white md:text-base text-ms  font-semibold '>
                     Investors looking for a pure-play asset manager to invest in-one with the backing of a company with over [50] years of investing experience and a strong track record of delivering returns to shareholders
                     </div>
               </div>
