@@ -15,7 +15,6 @@ export const FifthFrame = () => {
   const [on, toggle] = React.useState(false);
 
   return (
-    //  <div topOffset={'0px'} bottomOffset={'200px'} delay={0} duration={300}   twstyles={'flex justify-center w-full bg-white flex-col text-brandblue px-60 pb-20 -mt-48'} Enter={true} Leave={false}>
     <div className='flex justify-center w-full bg-white flex-col text-brandblue px-60 pb-20  animate-coverLayer lg:h-200'> 
           <div className='flex bg-white justify-center'>
                 <div className='flex flex-col  justify-center text-left gap-1'>
