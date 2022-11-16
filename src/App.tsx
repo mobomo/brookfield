@@ -13,11 +13,12 @@ import SeventhFrame from './frames/SeventhFrame'
 import EighthFrame  from './frames/EightFrame'
 import Opacity from './springs/Opacity'
 import {Waypoint} from 'react-waypoint'
-
+import useTWMediaQueriesTemplate from './utils/getTWMediaQueriesTemplate'
 
 const App = () => {
   const [inView, setInview] = useState(false);
-
+  const  twStyles  = useTWMediaQueriesTemplate
+  console.log(twStyles('App','page3').plusHeight,'twStyles.plusHeight');
 
   return (
   
@@ -55,8 +56,8 @@ const App = () => {
       <ParallaxLayer
         offset={1}
         speed={0}
-        className='flex justify-center items-center  sm:-mt-40 md:mt-20 lg:mt-80 xl:mt-120  2xl:mt-120  3xl:mt-96   4xl:mt-40   
-                                                   '
+        className='flex justify-center items-center  sm:-mt-40 md:mt-20 lg:mt-80 xl:mt-120  2xl:mt-120  3xl:mt-96   4xl:mt-40'
+        // className={twStyles('App','page3').plusHeight}
         style={{ height: '60vh' }} 
       >
 
@@ -68,7 +69,8 @@ const App = () => {
       <ParallaxLayer
             offset={1.5}
             speed={0}
-        className='flex flex-col justify-center items-center md:mt-120 lg:mt-180 xl:mt-180 2xl:mt-160  3xl:mt-140   4xl:mt-40   '
+        // className='flex flex-col justify-center items-center md:mt-120 lg:mt-180 xl:mt-180 2xl:mt-160  3xl:mt-140   4xl:mt-40   '
+        className={twStyles('App','page4').plusHeight}
         // sticky={{ start: 3, end: 4 }}
          style={{ height: '55vh' }} 
       >
@@ -84,7 +86,8 @@ const App = () => {
             offset={2}
         //  offset={0.1}
             speed={0}
-        className='flex  text-center justify-center items-center  lg:mt-180 bg-lightBlue  xl:mt-200 2xl:mt-180  3xl:mt-150 4xl:mt-40 md:mt-120 md:p-10'
+        // className='flex  text-center justify-center items-center  lg:mt-180 bg-lightBlue  xl:mt-200 2xl:mt-180  3xl:mt-150 4xl:mt-40 md:mt-120 md:p-10'
+        className={twStyles('App','page5').plusHeight}
         style={{ height: '50vh' }}
       >
 
@@ -98,7 +101,8 @@ const App = () => {
         offset={2.2}
         speed={0}
         style={{ height: '50vh' }}
-         className='flex  text-center justify-center items-center  -mt-20 md:mt-96 lg:mt-180 xl:mt-210  2xl:mt-160   3xl:mt-160 4xl:mt-20 '
+        //  className='flex  text-center justify-center items-center  -mt-20 md:mt-96 lg:mt-180 xl:mt-210  2xl:mt-160   3xl:mt-160 4xl:mt-20 '
+        className={twStyles('App','page6').plusHeight}
       >
                       <Waypoint
                         onEnter={() => setInview(true)}
@@ -115,7 +119,8 @@ const App = () => {
         <ParallaxLayer
           offset={2.8}
           speed={0}
-        className='flex flex-col text-center justify-center items-center mb-0 mt-0 md:mt-120 lg:mt-220 xl:mt-240  2xl:mt-200  3xl:mt-200 4xl:mt-40 '
+        // className='flex flex-col text-center justify-center items-center mb-0 mt-0 md:mt-120 lg:mt-220 xl:mt-240  2xl:mt-200  3xl:mt-200 4xl:mt-40 '
+        className={twStyles('App','page7').plusHeight}
          style={{ height: '30vh' }}
       >
 
@@ -127,7 +132,8 @@ const App = () => {
       <ParallaxLayer
           offset={3.4}
         speed={0}
-         className=' 4xl:mt-10  3xl:mt-210 2xl:mt-200  xl:mt-250 lg:mt-240 md:mt-130'
+        //  className=' 4xl:mt-10  3xl:mt-210 2xl:mt-200  xl:mt-250 lg:mt-240 md:mt-130'
+        className={twStyles('App','page8').plusHeight}
       >
 
 <SeventhFrame />
