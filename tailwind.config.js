@@ -67,7 +67,8 @@ module.exports = {
       // },
       colors: {
         // "brandblue": "#082c5c",
-          "brandblue": "#002A4E",
+        "brandblue": "#002A4E",
+        "lightBlue": "#96CFF1",
 
       },
       width: {
