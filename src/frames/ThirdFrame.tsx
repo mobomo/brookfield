@@ -33,4 +33,25 @@ export const ThirdFrame = () => {
   )
 }
 
-export default ThirdFrame
+export default ThirdFrame;
+
+
+
+
+// const { width, height } = useWindowDimensions();
+
+{/* <div className='mb-0 -mt-5 ml-12 md:ml-0 '>
+         {width<739? <svg width="333" height="168" viewBox="0 0 333 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="3.5" cy="164.5" r="3.5" transform="rotate(-180 3.5 164.5)" fill="#F5F5F5"/>
+              <line x1="3.5" y1="164" x2="3.5" y2="84" stroke="#F5F5F5"/>
+              <line x1="332.5" y1="85" x2="332.5" stroke="#F5F5F5"/>
+              <line x1="3" y1="84.5" x2="333" y2="84.5" stroke="#F5F5F5"/>
+            </svg> :
+            <svg width="226" height="168" viewBox="0 0 226 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="2.37537" cy="164.5" rx="2.37538" ry="3.5" transform="rotate(-180 2.37537 164.5)" fill="#F5F5F5"/>
+                <line x1="2.21471" y1="164" x2="2.21471" y2="84" stroke="#F5F5F5"/>
+                <line x1="225.5" y1="85" x2="225.5" stroke="#F5F5F5"/>
+                <line x1="2.03603" y1="84.5" x2="226" y2="84.5" stroke="#F5F5F5"/>
+            </svg>}
+         </div> */}
+  
