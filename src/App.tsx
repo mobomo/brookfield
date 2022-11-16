@@ -14,11 +14,20 @@ import EighthFrame  from './frames/EightFrame'
 import Opacity from './springs/Opacity'
 import {Waypoint} from 'react-waypoint'
 import useTWMediaQueriesTemplate from './utils/getTWMediaQueriesTemplate'
+import useMediaQueries from './utils/getMediaQueries';
+import useWindowDimensions from './utils/getWindowDimensions';
 
 const App = () => {
   const [inView, setInview] = useState(false);
+  const { screenSize, screenSizeH } = useMediaQueries();
+  const { width, height } = useWindowDimensions();
+
+  console.log('screenSizeH: ', screenSizeH);
+  
   const  twStyles  = useTWMediaQueriesTemplate
-  console.log(twStyles('App','page3').plusHeight,'twStyles.plusHeight');
+   const viewPortHeight  = height < 600 ? '350px' : '600px'
+   console.log('viewPortHeight: ', viewPortHeight);
+  
 
   return (
   
@@ -121,7 +130,7 @@ const App = () => {
           speed={0}
         // className='flex flex-col text-center justify-center items-center mb-0  mt-100 md:mt-120  lg:mt-160 xl:mt-240  2xl:mt-250  3xl:mt-200 4xl:mt-40 px-2'
         className={twStyles('App','page7').plusHeight}
-         style={{ height: '30vh', zIndex: '-1' }}
+         style={{ height: viewPortHeight, zIndex: '-1' }}
       >
 
 <SixthFrame />

@@ -7,12 +7,12 @@ export const FourthFrame = () => {
   const [on, toggle] = React.useState(false);
   
   return (
-    <div className='flex items-center text-brandblue  flex-col-reverse md:flex-row -mt-40 md:mt-0'>
-       <div className='flex flex-col w-full md:w-97 justify-center text-left gap-3 -mt-20 md:mt-0'>
-                  <div className=' md:text-4.75xl text-xl  font-mediumplus font-playfair'>
+    <div className='flex items-center text-brandblue  flex-col-reverse md:flex-row -mt-40 md:mt-0 '>
+       <div className='flex flex-col w-full md:w-97 justify-center text-left gap-3 -mt-5 md:mt-0 px-8 '>
+                  <div className=' md:text-4.75xl text-2xl  font-bold font-playfair'>
                     Brookfield Corporation
                   </div>
-                  <div className='md:text-base text-ms font-semibold '>
+                  <div className='md:text-base text-ms font-mediumplus '>
                     Reinvest the bulk of its earnings for a steady return with a long-term horizon in mind
                   </div>
                   <div className='md:text-base text-ms'>

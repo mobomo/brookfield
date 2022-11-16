@@ -38,7 +38,7 @@ export const ThirdFrame = () => {
       </Opacity>
       <div className='flex flex-col -mt-10 md:mt-0  md:w-97 w-full'>
         <div className={'flex flex-col w-full md:w-97 justify-center text-center md:text-left gap-3 mb-20'}>
-                  <div className='text-white md:text-4.75xl text-xl font-mediumplus font-playfair'>
+                  <div className='text-white md:text-4.75xl text-xl font-bold font-playfair'>
                     Another way to invest with Brookfield
                   </div>
                   <div className='text-white md:text-base text-ms  font-semibold '>
