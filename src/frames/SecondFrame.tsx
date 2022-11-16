@@ -26,11 +26,11 @@ export const SecondFrame = () => {
           </div>
 
           <div className='flex w-full flex-col-reverse md:flex-row justify-center items-center md:gap-10 gap-0 -mt-40 md:-mt-32'>
-              <div className='flex flex-col md:w-97 w-full  justify-center text-left gap-3  -mt-10 md:mt-0'>
-                  <div className='flex text-white md:text-4.75xl text-xl  font-mediumplus font-playfair'>
+              <div className='flex flex-col md:w-97 w-full  justify-center text-center md:text-left gap-3  -mt-10 md:mt-0'>
+                  <div className='text-white md:text-4.75xl text-xl  font-mediumplus font-playfair'>
                     Two entities, distinct offerings
                   </div>
-                  <div className='flex text-white md:text-base text-ms font-semibold '>
+                  <div className='text-white md:text-base text-ms font-semibold '>
                     Each with day-to-day operations preserved and the focus of a dedicated management team.
                   </div>
               </div>
