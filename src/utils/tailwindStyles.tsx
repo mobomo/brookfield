@@ -15,14 +15,14 @@ const page3: Record<string, string> = {
   }
 
   const page4: Record <string, string> = {
-  'mobile': 'flex flex-col justify-center items-center bg-lightBlue',
-  'sm': '    flex flex-col justify-center items-center bg-lightBlue ',
-  'md': '    flex flex-col justify-center items-center bg-lightBlue',
-  'lg': '    flex flex-col justify-center items-center bg-lightBlue mt-140 ',
-  'xl': '    flex flex-col justify-center items-center bg-lightBlue mt-180 ',
-  '2xl': '   flex flex-col justify-center items-center bg-lightBlue mt-120 ',
-  '3xl': '   flex flex-col justify-center items-center bg-lightBlue mt-96 ',
-  '4xl': '   flex flex-col justify-center items-center bg-lightBlue mt-40 ',
+  'mobile': 'flex flex-col justify-center items-center ',
+  'sm': '    flex flex-col justify-center items-center  ',
+  'md': '    flex flex-col justify-center items-center ',
+  'lg': '    flex flex-col justify-center items-center  mt-140 ',
+  'xl': '    flex flex-col justify-center items-center  mt-180 ',
+  '2xl': '   flex flex-col justify-center items-center  mt-120 ',
+  '3xl': '   flex flex-col justify-center items-center  mt-96 ',
+  '4xl': '   flex flex-col justify-center items-center  mt-40 ',
   }
 
 const page5: Record<string, string> = {
@@ -37,14 +37,14 @@ const page5: Record<string, string> = {
 }
 
 const page6: Record<string, string> = {
-  'mobile': 'flex text-center justify-center items-center bg-lightBlue',
-  'sm': '    flex text-center justify-center items-center bg-lightBlue',
-  'md': '    flex text-center justify-center items-center bg-lightBlue',  
-  'lg': '    flex text-center justify-center items-center bg-lightBlue  mt-160 ',
-  'xl': '    flex text-center justify-center items-center bg-lightBlue  mt-200 ',
-  '2xl': '   flex text-center justify-center items-center bg-lightBlue  mt-200 ',
-  '3xl': '   flex text-center justify-center items-center bg-lightBlue  mt-150 ',
-  '4xl': '   flex text-center justify-center items-center bg-lightBlue  mt-40 ',
+  'mobile': 'flex text-center justify-center items-center ',
+  'sm': '    flex text-center justify-center items-center ',
+  'md': '    flex text-center justify-center items-center ',  
+  'lg': '    flex text-center justify-center items-center   mt-160 ',
+  'xl': '    flex text-center justify-center items-center   mt-200 ',
+  '2xl': '   flex text-center justify-center items-center   mt-200 ',
+  '3xl': '   flex text-center justify-center items-center   mt-150 ',
+  '4xl': '   flex text-center justify-center items-center   mt-40 ',
 }
 
 const page7: Record<string, string> = {
