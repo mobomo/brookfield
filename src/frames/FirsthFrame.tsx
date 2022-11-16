@@ -2,13 +2,17 @@ import { Animation1 } from '../Animations'
 import { Frame000 } from '../frames'
 import { useEffect, useState, useRef } from 'react';
 import Opacity from '../springs/Opacity';
+import useWindowDimensions from '../utils/getWindowDimensions';
+import useMediaQueries from '../utils/getMediaQueries';
 
 export const FirsthFrame = () => {
-  const [on, toggle] = useState(false);
+  const { width, height } = useWindowDimensions();
+  const { screenSize, screenSizeH } = useMediaQueries();
+  
   return (
 
-         <Opacity twstyles='flex flex-col text-center  w-4/5  items-center  ' topOffset='-400px' bottomOffset='800px'>
-           
+         <div className='flex flex-col text-center  w-4/5  items-center  '>
+      <div className='bg-red-300'>{ `${width}-- ${screenSizeH} --  ${height}`}</div>
 
         <div className='animate-layerOpacity'><Animation1 /></div>
 
@@ -22,7 +26,7 @@ export const FirsthFrame = () => {
         
       </div>
    <Frame000 />
-    </Opacity>
+    </div>
 
   )
 }
