@@ -8,7 +8,7 @@ export const SecondFrame = () => {
     <div className='flex flex-col text-center justify-center items-center  '>
      {/* mobil:text-base  mobil:w-3/7 mobil:ml-40 */}
           <div className='flex flex-col gap-3'>
-              <div className='flex text-white text-3xl md:text-2xl max-w-9775 text-center font-semibold font-opensans leading-9 sm:text-xl'>
+              <div className='flex text-white 4xl:text-3xl 3xl:text-3xl 2xl:text-2xl  max-w-9775 text-center font-semibold font-opensans leading-9 sm:text-xl md:text-xl md:mt-96'>
                       We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
               </div>
             
@@ -24,9 +24,9 @@ export const SecondFrame = () => {
               </div>
           </div>
 
-          <div className='flex w-full  justify-center gap-10 -mt-32'>
-              <div className='flex flex-col w-97  justify-center text-left gap-3'>
-                  <div className='flex text-white text-4.75xl  font-mediumplus font-playfair'>
+          <div className='flex w-full  justify-center gap-10 -mt-32 '>
+              <div className='flex flex-col w-97  justify-center text-left gap-3 md:w-96 md:ml-20'>
+                  <div className='flex text-white text-4.75xl  font-mediumplus font-playfair md:text-2xl'>
                     Two entities, distinct offerings
                   </div>
                   <div className='flex text-white text-base  font-semibold '>

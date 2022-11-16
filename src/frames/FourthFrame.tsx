@@ -9,7 +9,7 @@ export const FourthFrame = () => {
   return (
     <div className='flex text-brandblue '>
        <div className='flex flex-col w-97  justify-center text-left gap-3'>
-                  <div className='flex  text-4.75xl  font-mediumplus font-playfair'>
+                  <div className='flex  text-4.75xl  font-mediumplus font-playfair '>
                     Brookfield Corporation
                   </div>
                   <div className='flex  text-base  font-semibold '>
