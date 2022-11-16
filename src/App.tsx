@@ -115,7 +115,7 @@ const App = () => {
           offset={2.8}
           speed={0}
         className='flex flex-col text-center justify-center items-center mb-0  mt-100 md:mt-120  lg:mt-160 xl:mt-240  2xl:mt-250  3xl:mt-200 4xl:mt-40 px-2'
-         style={{ height: '30vh' }}
+         style={{ height: '30vh', zIndex: '-1' }}
       >
         {/* <Waypoint
           onEnter={() => setInview6(true)}
