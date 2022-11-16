@@ -1,5 +1,9 @@
 
-  const page3: Record <string, string> = {
+
+
+
+///this are the section names  
+const page3: Record<string, string> = {
   'mobile': 'flex justify-center items-center',
   'sm': '    flex justify-center items-center -mt-40',
   'md': '    flex justify-center items-center mt-20',
@@ -65,25 +69,49 @@ const page8: Record<string, string> = {
   '4xl': 'mt-10',
 }
 
+type Section = typeof page3
 
-  const App: Record<string , typeof page3 > = {
+/// this is the file 
+  const App: Record<string , Section > = {
     page3, page4, page5, page6, page7, page8
   }
 
-const FirsthFrame = {};
+  // 
 
-const SecondFrame = {};
+// to add more styles first create a section (it is a div where the styles are ) then add the section to the file variable
 
-const ThirdFrame = {};
+const FirsthFrame: Record<string, Section> = {
+};
 
-const FourthFrame = {};
+const SecondFrame: Record<string, Section> = {
 
-const FifthFrame = {};
+};
 
-const SixthFrame = {};
+const ThirdFrame: Record<string, Section> = {
 
-const SeventhFrame = {};
-  
+};
+
+const FourthFrame: Record<string, Section> = {
+
+};
+
+const FifthFrame: Record<string, Section> = {
+
+}
+
+const SixthFrame: Record<string, Section> = {
+
+}
+
+const SeventhFrame: Record<string, Section> = {
+
+}
+
+
+
+
+
+// this is the data to be used in the script
 export const twStyles: Record<string, typeof App> = {
     App, FirsthFrame, SecondFrame, ThirdFrame, FourthFrame, FifthFrame, SixthFrame, SeventhFrame
 };
