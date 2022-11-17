@@ -16,7 +16,7 @@ yarn
 ```
 
 ---
-## Open to your computer browser
+## How to view and open a local copy to your computer browser
 ```
 yarn start
 
