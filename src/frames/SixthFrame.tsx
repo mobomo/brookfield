@@ -12,14 +12,14 @@ export const SixthFrame = () => {
           <line x1="3.5" y1="4" x2="3.5" y2="84" stroke="#F5F5F5"/>
           </svg>
         </div>
-        <div className='text-4xl font-playfair font-semibold'>A proven strategy</div>
-        <div>Leveraging a history of successfully providing public market access to Brookfield's investing expertise</div>
+        <div className='text-3xl lg:text-4xl font-playfair font-semibold mt-5'>A proven strategy</div>
+        <div className="px-5 lg:text-sm text-xs">Leveraging a history of successfully providing public market access to Brookfield's investing expertise</div>
       </div>
       <div className='flex flex-col md:flex-row justify-center items-center'>
   <Animation9 />
-        <div className='w-full md:w-977 text-left'>
+        <div className='w-full md:w-977 text-center px-5 lg:text-sm text-xs  '>
           <div>...allowing investors the flexibility to invest in the Brookfield businesses they prefer</div>
-          <div className='flex mt-8'>All with the backing of Brookfield.</div>
+          <div className='flex mt-8 text-center justify-center mb-10'>All with the backing of Brookfield.</div>
         </div>
       </div>
       <div>

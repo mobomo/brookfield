@@ -25,14 +25,13 @@ const App = () => {
   console.log('screenSizeH: ', screenSizeH);
   
   const  twStyles  = useTWMediaQueriesTemplate
-   const viewPortHeight  = height < 600 ? '350px' : '600px'
-   console.log('viewPortHeight: ', viewPortHeight);
+   const mobileVersion  = width < 600  
   
-
+   const numPages = mobileVersion ? 5.2 : 5
   return (
   
 <Parallax
-      pages={5}
+      pages={numPages}
       style={{ top: '0', left: '0', backgroundColor: '#002A4E' }}
     >
 {/* Page 1 */}
@@ -53,7 +52,7 @@ const App = () => {
         offset={0.5}
         speed={0}
         className='flex flex-col text-center justify-start items-center px-2'
-        style={{ height: '100vh' }}  
+        style={{ height: 'fit-content' }}
       >
 <IntroFrame />
 
@@ -67,7 +66,7 @@ const App = () => {
         speed={0}
         // className='flex justify-center items-center mt-80 md:mt-40 md:mt-60 lg:mt-80 xl:mt-120  2xl:mt-120  3xl:mt-96   4xl:mt-40 px-2'
         className={twStyles('App','page3').plusHeight}
-        style={{ height: '60vh' }} 
+       style={{ height: 'fit-content' }}
       >
 
 <SecondFrame />
@@ -81,7 +80,7 @@ const App = () => {
         // className='flex flex-col justify-center items-center mt-100 md:mt-120 lg:mt-140 xl:mt-180 2xl:mt-180  3xl:mt-140   4xl:mt-40 px-2'
         className={twStyles('App','page4').plusHeight}
         // sticky={{ start: 3, end: 4 }}
-         style={{ height: '60vh' }} 
+       style={{ height: 'fit-content' }}
       >
 
 <ThirdFrame />
@@ -97,7 +96,7 @@ const App = () => {
             speed={0}
         // className='flex  text-center justify-center items-center mt-130 md:mt-120 lg:mt-160 bg-blue-300  xl:mt-200 2xl:mt-200  3xl:mt-150 4xl:mt-40 px-2'
         className={twStyles('App','page5').plusHeight}
-        style={{ height: '50vh' }}
+        style={{ height: 'fit-content' }}
       >
 
 <FourthFrame />
@@ -109,7 +108,7 @@ const App = () => {
       <ParallaxLayer
         offset={2.2}
         speed={0}
-        style={{ height: '50vh' }}
+        style={{ height: '450px' }}
         // className='flex  text-center justify-center items-center mt-80 md:mt-100 lg:mt-140 xl:mt-210  2xl:mt-200   3xl:mt-160 4xl:mt-20'
         className={twStyles('App','page6').plusHeight}
       >
@@ -119,8 +118,8 @@ const App = () => {
                         topOffset={'-400px'}
                         onLeave={() => setInview(false)}
                       />
-{inView ?
-<FifthFrame /> : null}
+{!mobileVersion?inView ?
+          <FifthFrame mobileVersion={false} /> : null : <FifthFrame mobileVersion={true} />}
         
       </ParallaxLayer>
 {/* Page 7 */}
@@ -130,7 +129,7 @@ const App = () => {
           speed={0}
         // className='flex flex-col text-center justify-center items-center mb-0  mt-100 md:mt-120  lg:mt-160 xl:mt-240  2xl:mt-250  3xl:mt-200 4xl:mt-40 px-2'
         className={twStyles('App','page7').plusHeight}
-         style={{ height: viewPortHeight, zIndex: '-1' }}
+       style={{ height: 'fit-content' }}
       >
 
 <SixthFrame />
@@ -141,6 +140,7 @@ const App = () => {
       <ParallaxLayer
           offset={3.4}
         speed={0}
+        style={{ height: 'fit-content' }}
         //  className=' mt-200 md:mt-200  4xl:mt-10  3xl:mt-210 2xl:mt-260  xl:mt-250 lg:mt-180'
                 className={twStyles('App','page8').plusHeight}
       >
