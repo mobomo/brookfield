@@ -26,7 +26,7 @@ yarn start
 ## Build process (not available)
 ```
 yarn build
-# or `npm run build`
+
 ```
 
 ---
