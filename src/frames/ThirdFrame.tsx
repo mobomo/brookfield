@@ -33,15 +33,15 @@ export const ThirdFrame = () => {
   
   return (
     <div className='flex flex-col md:flex-row w-full md:w-auto items-center'>
-      <Opacity  twstyles=' mt-10 md:-mt-28  md:mr-10 max-w-40  md:max-w-9777'  bottomOffset='400px' topOffset='-400px'>
+      <Opacity  twstyles=' mt-10 md:-mt-28  md:mr-10 min-w-40  md:min-w-9777'  bottomOffset='400px' topOffset='-400px'>
       <Animation4 />
       </Opacity>
       <div className='flex flex-col -mt-10 md:mt-0  md:w-97 w-full'>
-        <div className={'flex flex-col w-full md:w-97 justify-center text-center md:text-left gap-3 mb-20'}>
-                  <div className='text-white md:text-4.75xl text-xl font-bold font-playfair px-10 lg:px-0'>
+        <div className={'flex flex-col w-full md:w-97 justify-center text-center md:text-left gap-3 mb-20 md:mb-10 md:mt-0'}>
+                  <div className='text-white md:text-3xl lg:text-4.75xl lg:font-mediumplus text-xl font-bold font-playfair px-10 lg:px-0 md:px-0'>
                     Another way to invest with Brookfield
                   </div>
-                  <div className='text-white md:text-base text-xs  font-semibold px-5 lg:px-0'>
+                  <div className='text-white md:text-base text-xs  font-semibold px-5 lg:px-0 md:px-0'>
                     Investors looking for a pure-play asset manager to invest in-one with the backing of a company with over [50] years of investing experience and a strong track record of delivering returns to shareholders
                     </div>
               </div>

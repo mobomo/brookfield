@@ -23,7 +23,7 @@ const App = () => {
   const { width, height } = useWindowDimensions();
   // const [numPages, setNumPages] = useState(5);
   const  twStyles  = useTWMediaQueriesTemplate
-  const mobileVersion  = width < 600  
+  const mobileVersion  = width < 900  
   
   
   // const numPages = mobileVersion ? 5.2 : 5
@@ -77,8 +77,8 @@ const App = () => {
   return (
   
 <Parallax
-      pages={5.2}
-      style={{ top: '0', left: '0', backgroundColor: '#002A4E' }}
+      pages={8}
+      style={{ top: '0', left: '0', backgroundColor: '#002A4E', display:'flex' }}
     >
 {/* Page 1 */}
 {/* Intro text only */}

@@ -25,17 +25,17 @@ export const SecondFrame = () => {
               </div>
           </div>
 
-          <div className='flex w-full flex-col-reverse md:flex-row justify-center items-center md:gap-10 gap-0 -mt-36 md:-mt-32 lg:-mt-22'>
-              <div className='flex flex-col md:w-97 w-full  justify-center text-center md:text-left gap-3  -mt-0 md:mt-0'>
-                  <div className='text-white md:text-4.75xl lg:font-mediumplus text-xl  font-semibold  font-playfair'>
+          <div className='flex w-full flex-col-reverse md:flex-row justify-center items-center md:gap-10 gap-0 -mt-52 md:py-8 md:-mb-6 lg:-mt-22 md:px-2  '>
+              <div className='flex flex-col   w-full  justify-center text-center md:text-left gap-3  -mt-0 md:mt-0 '>
+                  <div className='text-white md:text-3xl lg:text-4.75xl  lg:font-mediumplus text-xl  font-semibold  font-playfair md:w-full'>
                     Two entities, distinct offerings
                   </div>
-                  <div className='text-white md:text-base text-xs font-semibold px-10 lg:px-0'>
+                  <div className='text-white md:text-base text-xs font-semibold px-10 lg:px-0  md:px-0 '>
                     Each with day-to-day operations preserved and the focus of a dedicated management team.
                   </div>
               </div>
               
-              <div className=' max-w-40 md:max-w-9777 mt-10'>
+              <div className=' min-w-40 md:max-w-9777 mt-10 '>
                 <Opacity bottomOffset='400px' topOffset='-400px'>
                     <Animation3 />
                 </Opacity>

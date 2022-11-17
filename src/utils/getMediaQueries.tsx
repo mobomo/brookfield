@@ -6,10 +6,13 @@ function useMediaQueries() {
   const { width, height } = useWindowDimensions()
 
   const screenSizes = {
-    mobile: 320,
-    mobileH1: 320,
-    mobileH2: 480,
-    mobileH3: 640,
+    mobileW1: 375,
+    mobileW2: 390,
+    mobileW3: 412,
+    mobileH1: 640,
+    mobileH2: 684,
+    mobileH3: 736,
+    mobileH4: 844,
     sm: 640,
     smH1: 320,
     smH2: 480,
@@ -123,17 +126,52 @@ function useMediaQueries() {
       else if (height >= screenSizes['smH1']) {
         setScreenSizeH('smH1')
       }
-    } else if (width >= screenSizes.mobile) {
-      setScreenSize('mobile')
-      if (height >= screenSizes['mobileH3']) {
-        setScreenSizeH('mobileH3')
+    } else if (width >= screenSizes.mobileW3) {
+      setScreenSize('mobileW3')
+      if (height >= screenSizes['mobileH4']) {
+        setScreenSizeH('mobileW3H4')
+      }
+      else if (height >= screenSizes['mobileH3']) {
+        setScreenSizeH('mobileW3H3')
       }
       else if (height >= screenSizes['mobileH2']) {
-        setScreenSizeH('mobileH2')
+        setScreenSizeH('mobileW3H2')
       }
       else if (height >= screenSizes['mobileH1']) {
         setScreenSizeH('mobileH1')
       }
+    }
+    else if (width >= screenSizes.mobileW2) {
+      setScreenSize('mobileW2')
+      if (height >= screenSizes['mobileH4']) {
+        setScreenSizeH('mobileW2H4')
+      }
+      else if (height >= screenSizes['mobileH3']) {
+        setScreenSizeH('mobileW2H3')
+      }
+      else if (height >= screenSizes['mobileH2']) {
+        setScreenSizeH('mobileW2H2')
+      }
+      else if (height >= screenSizes['mobileH1']) {
+        setScreenSizeH('mobileW2H1')
+      }
+      
+    }
+    else if (width >= screenSizes.mobileW1) {
+      setScreenSize('mobileW1')
+      if (height >= screenSizes['mobileH4']) {
+        setScreenSizeH('mobileW1H4')
+      }
+      else if (height >= screenSizes['mobileH3']) {
+        setScreenSizeH('mobileW1H3')
+      }
+      else if (height >= screenSizes['mobileH2']) {
+        setScreenSizeH('mobileW1H2')
+      }
+      else if (height >= screenSizes['mobileH1']) {
+        setScreenSizeH('mobileW1H1')
+      }
+      
     }
   }, [width, height])
 
