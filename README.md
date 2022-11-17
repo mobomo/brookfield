@@ -1,6 +1,6 @@
 # Brookfield
 
-## Instructions to install and publish the project
+## Instructions to install and publish the project via your computer command line
 
 
 ## Download
