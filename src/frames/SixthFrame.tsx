@@ -13,13 +13,13 @@ export const SixthFrame = () => {
           </svg>
         </div>
         <div className='text-3xl lg:text-4xl font-playfair font-semibold mt-5'>A proven strategy</div>
-        <div className="px-5 lg:text-sm text-xs">Leveraging a history of successfully providing public market access to Brookfield's investing expertise</div>
+        <div className="px-5 lg:text-lg text-xs lg:px-2">Leveraging a history of successfully providing public market access to Brookfield's investing expertise</div>
       </div>
-      <div className='flex flex-col md:flex-row justify-center items-center'>
+      <div className='flex flex-col md:flex-row justify-center items-center '>
   <Animation9 />
-        <div className='w-full md:w-977 text-center px-5 lg:text-sm text-xs  '>
-          <div>...allowing investors the flexibility to invest in the Brookfield businesses they prefer</div>
-          <div className='flex mt-8 text-center justify-center mb-10'>All with the backing of Brookfield.</div>
+        <div className='w-full md:w-977 text-center px-5 lg:text-lg text-xs  lg:flex lg:flex-col lg:items-start  lg:pl-32'>
+          <div className='text-left'>...allowing investors the flexibility to invest in the Brookfield businesses they prefer</div>
+          <div className='flex mt-8 text-center justify-center lg:flex-none lg:text-left mb-10 lg:text-lg '>All with the backing of Brookfield.</div>
         </div>
       </div>
       <div>

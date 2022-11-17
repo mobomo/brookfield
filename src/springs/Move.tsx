@@ -32,10 +32,7 @@ const Move = ({ children, twstyles='flex', duration=800, delay=0, bottomOffset='
   return (
     <Waypoint
       onEnter={() => setInview(true)}
-      // onLeave={() => {
-      //   setInview(false)
-      //   console.log('leaving')
-      // }}
+
       bottomOffset={!inView?bottomOffset:'0px'}
       // bottomOffset={'0px'}
       topOffset={!inView?topOffset:'0px'}

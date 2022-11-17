@@ -20,8 +20,6 @@ const Opacity = (
     <Waypoint
       onEnter={() => setInview(true)}
       onLeave={() => {
-        // console.log("leave");
-        
         setInview(false);
       }}
       topOffset={topOffset}
@@ -36,5 +34,3 @@ const Opacity = (
 };
 
 export default Opacity;
-
-//     const props = useSpring({ x: inView ? 1 : 0 })

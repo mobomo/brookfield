@@ -21,17 +21,63 @@ const App = () => {
   const [inView, setInview] = useState(false);
   const { screenSize, screenSizeH } = useMediaQueries();
   const { width, height } = useWindowDimensions();
-
-  console.log('screenSizeH: ', screenSizeH);
-  
+  // const [numPages, setNumPages] = useState(5);
   const  twStyles  = useTWMediaQueriesTemplate
-   const mobileVersion  = width < 600  
+  const mobileVersion  = width < 600  
   
-   const numPages = mobileVersion ? 5.2 : 5
+  
+  // const numPages = mobileVersion ? 5.2 : 5
+  
+  
+  const numPages = screenSizeH === 'mobileH3' ? 5.2 :
+  screenSizeH === '2xlH2' ? 4.6 :
+  screenSizeH === '3xlH2' ? 4.6 :
+  screenSizeH === '4xlH3' ? 4.6 : 5
+  
+  console.log('numPages: ', numPages);
+  // useEffect(() => {
+  //   console.log('screenSizeH',screenSizeH);
+    
+  //   switch (screenSizeH) {
+  //   case 'mobileH3':
+  //     console.log('mobileH3');
+  //     setNumPages(5)
+  //     break;
+  //   case 'sm':
+  //     console.log('sm');
+  //     break;
+  //   case 'mdH3':
+  //     console.log('mdH3');
+  //     setNumPages(5.2)
+  //     break;
+  //   case 'lg':
+  //     console.log('lg');
+  //     break;
+  //   case 'xl':
+  //     console.log('xl');
+  //     break;
+  //   case '2xlH2':
+  //     console.log('2xlH2');
+  //     setNumPages(4.6)
+  //     break;
+  //   case '3xlH2':
+  //     console.log('3xlH2');
+  //     setNumPages(5)
+  //     break;
+  //   case '4xlH3':
+  //     console.log('4xlH3');
+  //     setNumPages(5)
+  //     break;
+  //   default:
+  //     break;
+  //   }
+  // }, [screenSizeH]);
+
+
   return (
   
 <Parallax
-      pages={numPages}
+      pages={5.2}
       style={{ top: '0', left: '0', backgroundColor: '#002A4E' }}
     >
 {/* Page 1 */}
@@ -99,7 +145,7 @@ const App = () => {
         style={{ height: 'fit-content' }}
       >
 
-<FourthFrame />
+        <FourthFrame mobileVersion={mobileVersion} />
         
       </ParallaxLayer>  
 {/* Page 6 */}
@@ -118,9 +164,15 @@ const App = () => {
                         topOffset={'-400px'}
                         onLeave={() => setInview(false)}
                       />
-{!mobileVersion?inView ?
-          <FifthFrame mobileVersion={false} /> : null : <FifthFrame mobileVersion={true} />}
         
+
+{ mobileVersion?
+<FifthFrame mobileVersion={mobileVersion} />:
+inView ? 
+<FifthFrame mobileVersion={mobileVersion} /> :null }
+
+        
+
       </ParallaxLayer>
 {/* Page 7 */}
 {/* Proven strategy - animation and text - hand animation */}

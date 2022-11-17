@@ -15,8 +15,8 @@ export const FifthFrame = ({mobileVersion}:{mobileVersion:boolean}) => {
   const [on, toggle] = React.useState(false);
 
   return (
-    //  <div topOffset={'0px'} bottomOffset={'200px'} delay={0} duration={300}   twstyles={'flex justify-center w-full bg-white flex-col text-brandblue px-60 pb-20 -mt-48'} Enter={true} Leave={false}>
-    <div className={`flex justify-center w-full bg-white flex-col text-brandblue md:px-60 py-26 ${mobileVersion?'animate-coverLayer':''} lg:h-200 px-2`}> 
+    <div className={`flex justify-center w-full bg-white flex-col text-brandblue md:px-60 py-26 ${!mobileVersion?'animate-coverLayer':''} lg:h-200 px-2`}> 
+         {/* <div className={`flex justify-center w-full bg-white flex-col text-brandblue md:px-60 py-26 animate-coverLayer lg:h-200 px-2`}>  */}
           <div className='flex bg-white justify-center flex-col-reverse md:flex-row px-8 '>
                 <div className='flex flex-col  justify-center text-left gap-1 -mt-10 md:mt-0 mb-10'>
                       <div className='flex  text-2xl lg:text-4.5xl  font-semibold font-playfair'>

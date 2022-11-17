@@ -8,7 +8,7 @@ export const SecondFrame = () => {
     <div className='flex flex-col text-center justify-center items-center w-full md:w-auto'>
      {/* mobil:text-base  mobil:w-3/7 mobil:ml-40 */}
           <div className='flex flex-col gap-3 w-full md:w-auto items-center'>
-              <div className='flex text-white text-base md:text-2xl lg:text-3xl max-w-9775 text-center font-semibold font-opensans leading-6 sm:text-xl px-8 mb-5'>
+              <div className='flex text-white text-base md:text-2xl lg:text-3xl max-w-9775 text-center font-semibold font-opensans leading-6 lg:leading-10 sm:text-xl px-8 mb-5'>
                       We believe our business has greater potential for even more growth with the creation of a new listed pure-pay alternative asset manager.
               </div>
             
@@ -25,12 +25,12 @@ export const SecondFrame = () => {
               </div>
           </div>
 
-          <div className='flex w-full flex-col-reverse md:flex-row justify-center items-center md:gap-10 gap-0 -mt-36 md:-mt-32 '>
+          <div className='flex w-full flex-col-reverse md:flex-row justify-center items-center md:gap-10 gap-0 -mt-36 md:-mt-32 lg:-mt-22'>
               <div className='flex flex-col md:w-97 w-full  justify-center text-center md:text-left gap-3  -mt-0 md:mt-0'>
                   <div className='text-white md:text-4.75xl text-xl  font-semibold font-playfair'>
                     Two entities, distinct offerings
                   </div>
-                  <div className='text-white md:text-base text-xs font-semibold px-10'>
+                  <div className='text-white md:text-base text-xs font-semibold px-10 lg:px-0'>
                     Each with day-to-day operations preserved and the focus of a dedicated management team.
                   </div>
               </div>
