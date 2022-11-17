@@ -1,4 +1,4 @@
-[# Brookfield
+# Brookfield
 
 ## Instructions to install and publish the project via your computer command line
 
