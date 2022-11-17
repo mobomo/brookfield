@@ -1,11 +1,12 @@
-# Brookfield
+[# Brookfield
 
 ## Instructions to install and publish the project via your computer command line
 
 
 ## Download
 
-``` git clone https://github.com/mobomo/brookfield.git
+``` 
+git clone https://github.com/mobomo/brookfield.git
 ```
 
 
